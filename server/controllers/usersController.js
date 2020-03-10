@@ -1,4 +1,4 @@
-const User = require("../../models/usersModel");
+const User = require("../models/usersModel.js");
 
 module.exports.create = function(req, res) {
   const userObj = req.body;
