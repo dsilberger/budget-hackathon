@@ -1,8 +1,8 @@
 const { Sequelize, DataTypes } = require('sequelize');
+const { DB_USER, DB_PASSWORD } = require('../db/config');
 
-const sequelize = new Sequelize('budget', 'dsilberger', '', {
-  // <- UPDATE USERNAME TO CONFIG ENTRY
-  host: 'localhost', // <- UPDATE TO CONFIG ENTRIES
+const sequelize = new Sequelize('budget', DB_USER, DB_PASSWORD, {
+  host: 'localhost', // <- CHANGE FOR DEPLOYMENT
   dialect: 'mysql'
 });
 
@@ -45,7 +45,7 @@ module.exports.addUser = function(userObj) {
 
   newUser
     .save()
-    .then((err, data) => {
+    .then(data => {
       console.log(`New user created with ID ${data.id}`);
       return;
     })
@@ -57,7 +57,7 @@ module.exports.addUser = function(userObj) {
 
 module.exports.getUser = function() {
   User.findAll()
-    .then((err, data) => {
+    .then(data => {
       return data;
     })
     .catch(err => {
