@@ -1,9 +1,9 @@
-const userRouter = require('express').Router();
+const usersRouter = require('express').Router();
 const userController = require('../db/controllers/usersController.js');
 
-userRouter
+usersRouter
   .route('/sign-up')
-  .get(userController.retrieve)
+  .get(userController.retrieveSignUp)
   .post(userController.create);
 
-module.exports = userRouter;
+module.exports = usersRouter;
