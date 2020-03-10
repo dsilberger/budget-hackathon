@@ -47,5 +47,5 @@ module.exports.addUser = function(userObj) {
 };
 
 module.exports.getUser = function() {
-  return User.findAll();
+  return User.findAll().then(data => data[0]["dataValues"]);
 };

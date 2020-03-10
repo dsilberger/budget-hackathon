@@ -16,8 +16,7 @@ module.exports.create = function(req, res) {
 module.exports.retrieve = function(req, res) {
   User.getUser()
     .then(data => {
-      userData = data[0]["dataValues"];
-      // userData will be of the form
+      // userData will be JSON of the form
       // {
       //   id: 1,
       //   name: 'Coffee Bear',
@@ -27,7 +26,7 @@ module.exports.retrieve = function(req, res) {
       //   updatedAt: 2020-03-10T20:51:48.000Z
       // }
 
-      res.send(userData);
+      res.send(data);
     })
     .catch(err => {
       console.error(`An error occured while creating a user: ${err}`);
