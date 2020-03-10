@@ -3,7 +3,7 @@ const userController = require("../db/controllers/usersController.js");
 
 usersRouter
   .route("/user")
-  .get(userController.retrieveSignUp)
+  .get(userController.retrieve)
   .post(userController.create);
 
 module.exports = usersRouter;
