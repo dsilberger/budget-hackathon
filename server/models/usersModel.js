@@ -1,14 +1,14 @@
-const { Sequelize, DataTypes } = require('sequelize');
-const { DB_USER, DB_PASSWORD } = require('../db/config');
+const { Sequelize, DataTypes } = require("sequelize");
+const { DB_USER, DB_PASSWORD } = require("../db/config");
 
-const sequelize = new Sequelize('budget', DB_USER, DB_PASSWORD, {
-  host: 'localhost', // <- CHANGE FOR DEPLOYMENT
-  dialect: 'mysql'
+const sequelize = new Sequelize("budget", DB_USER, DB_PASSWORD, {
+  host: "localhost", // <- CHANGE FOR DEPLOYMENT
+  dialect: "mysql"
 });
 
 // User model
 
-const User = sequelize.define('User', {
+const User = sequelize.define("User", {
   id: {
     type: DataTypes.INTEGER,
     allowNull: false,
@@ -43,25 +43,9 @@ module.exports.addUser = function(userObj) {
 
   let newUser = User.build(userObj);
 
-  newUser
-    .save()
-    .then(data => {
-      console.log(`New user created with ID ${data.id}`);
-      return;
-    })
-    .catch(err => {
-      console.error(`Failed to create new user in database. Error: ${err}`);
-      return;
-    });
+  return newUser.save();
 };
 
 module.exports.getUser = function() {
-  User.findAll()
-    .then(data => {
-      return data;
-    })
-    .catch(err => {
-      console.error(`Failed to get user profile. Error: ${err}`);
-      return;
-    });
+  return User.findAll().then(data => data[0]["dataValues"]);
 };
