@@ -7,10 +7,10 @@ const model = {
       values (?)
     `;
 
-    return db.queryAsync(q, [name]).then(({ insertId }) => model.getCategory(insertId));
+    return db.queryAsync(q, [name]).then(({ insertId }) => model._getCategoryById(insertId));
   },
 
-  getCategory: id => {
+  _getCategoryById: id => {
     const q = `
       select * from Categories c
       where c.id = ?
