@@ -1,8 +1,8 @@
-const usersRouter = require('express').Router();
-const userController = require('../db/controllers/usersController.js');
+const usersRouter = require("express").Router();
+const userController = require("../db/controllers/usersController.js");
 
 usersRouter
-  .route('/sign-up')
+  .route("/user")
   .get(userController.retrieveSignUp)
   .post(userController.create);
 
