@@ -36,6 +36,14 @@ const model = {
         return categoryId ? categoryId : model.addCategory({ name: categoryName }).then(({ id }) => id);
       })
       .then(categoryId => db.queryAsync(q, [date, description, categoryId, accountName, amount100]));
+  },
+
+  _getExpenseById: id => {
+    const q = `
+      select * from Expenses e
+      where e.id = ?`;
+
+    return db.queryAsync(q, [id]).then(dbRes => dbRes[0]);
   }
 };
 
@@ -58,3 +66,5 @@ module.exports = model;
 //   })
 //   .then(console.log)
 //   .catch(console.error);
+
+model._getExpenseById(3).then(console.log);
