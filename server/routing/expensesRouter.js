@@ -7,3 +7,5 @@ router
   .post(controller.addExpense);
 
 router.route("/categories").get(controller.getCategories);
+
+module.exports = router;

@@ -16,7 +16,7 @@ const app = express();
 app.use(parser.json());
 app.use(morgan("dev"));
 
-// app.use(expensesRouter);
+app.use(expensesRouter);
 app.use(usersRouter);
 
 app.listen(PORT, () => console.log(`Budget server listening on port ${PORT}!`));
