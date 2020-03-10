@@ -1,0 +1,27 @@
+{
+  "name": "budgethackathon",
+  "version": "1.0.0",
+  "description": "budgeting app for the family on the go",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "budgeting",
+    "consumer",
+    "finance"
+  ],
+  "author": "Joe Yan, Dan Silberger",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "bluebird": "^3.7.2",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.2",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "webpack": "^4.42.0"
+  }
+}
