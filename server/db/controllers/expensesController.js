@@ -10,7 +10,7 @@ module.exports = {
       });
   },
 
-  getAllExpenses: function(req, res) {
+  getExpenses: function(req, res) {
     Model.getAllExpenses()
       .then(expenses => res.json(expenses))
       .catch(err => {
