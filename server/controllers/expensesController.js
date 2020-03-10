@@ -1,4 +1,4 @@
-const Model = require("../../models/expensesModel.js");
+const Model = require("../models/expensesModel.js");
 
 module.exports = {
   getCategories: function(req, res) {
