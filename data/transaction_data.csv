@@ -1,0 +1,576 @@
+Date,Description,Amount,Transaction Type,Category,Account Name
+01/01/2019,Skyba,49,debit,Gym,Credit Card 1
+01/01/2019,Feedfish,60.8,debit,Restaurants,Credit Card 1
+01/01/2019,Vinte,10.12,debit,Shopping,Credit Card 1
+1/1/2019,Buzzshare,1150,debit,Mortgage & Rent,Banking Account
+01/03/2019,Avaveo,3.03,debit,Coffee Shops,Credit Card 1
+01/03/2019,Feedfish,9.42,debit,Food & Dining,Credit Card 1
+01/03/2019,Photobean,121,debit,Public Transportation,Credit Card 1
+01/04/2019,Viva,5.98,debit,Groceries,Credit Card 1
+01/04/2019,Youspan,83.49,debit,Groceries,Credit Card 1
+01/04/2019,Dynabox,32.55,debit,Rental Car & Taxi,Credit Card 1
+01/04/2019,Brightdog,2.5,debit,ATM Fee,Banking Account
+01/04/2019,Trilith,80,debit,Cash & ATM,Banking Account
+01/04/2019,Demimbu,22.5,debit,Restaurants,Credit Card 1
+01/05/2019,InnoZ,11.27,debit,Fast Food,Credit Card 1
+01/05/2019,Zoomcast,29,debit,Restaurants,Credit Card 1
+01/05/2019,Zoomcast,15,debit,Restaurants,Credit Card 1
+01/05/2019,Zoomcast,27,debit,Restaurants,Credit Card 1
+01/06/2019,Edgepulse,107.25,debit,Public Transportation,Credit Card 1
+01/06/2019,Viva,9.83,debit,Groceries,Credit Card 1
+01/06/2019,Reallinks,39.85,debit,Restaurants,Credit Card 1
+01/07/2019,Youspan,25.51,debit,Furnishings,Credit Card 1
+01/07/2019,Meemm,54.14,debit,Restaurants,Credit Card 1
+01/07/2019,Wordify,10.1,debit,Groceries,Credit Card 1
+01/07/2019,Youspan,200,debit,Vacation,Banking Account
+01/09/2019,Viva,11.71,debit,Groceries,Credit Card 1
+1/11/2019,Trunyx,5.69,debit,Coffee Shops,Credit Card 2
+1/11/2019,Rhyzio,10.2,debit,Groceries,Credit Card 2
+1/12/2019,Dazzlesphere,51.05,debit,Restaurants,Credit Card 1
+1/13/2019,Photobug,13.5,debit,Fast Food,Credit Card 1
+1/13/2019,Cogidoo,8.5,debit,Restaurants,Credit Card 1
+1/13/2019,Quatz,247.96,debit,Air Travel,Credit Card 1
+1/13/2019,Photofeed,8.29,debit,Groceries,Credit Card 1
+1/15/2019,Avaveo,3.03,debit,Coffee Shops,Credit Card 1
+1/15/2019,Demizz,1626.06,credit,Paycheck,Banking Account
+1/15/2019,Edgepulse,107.25,debit,Public Transportation,Credit Card 1
+1/15/2019,Viva,14.18,debit,Groceries,Credit Card 1
+1/15/2019,Dynabox,15.7,debit,Pharmacy,Credit Card 1
+1/15/2019,Topicblab,13.88,debit,Restaurants,Credit Card 1
+1/15/2019,Yodel,112.7,debit,Clothing,Credit Card 1
+1/15/2019,Yozio,7.58,debit,Groceries,Credit Card 1
+1/16/2019,Wordify,23,debit,Amusement,Credit Card 1
+1/16/2019,Layo,5.16,debit,Pharmacy,Credit Card 1
+1/16/2019,Trudoo,4.53,debit,Restaurants,Credit Card 2
+1/16/2019,Pixope,75.2,debit,Entertainment,Credit Card 1
+1/17/2019,InnoZ,17.97,debit,Fast Food,Credit Card 1
+1/17/2019,Gevee,7.65,debit,Food & Dining,Credit Card 1
+1/17/2019,Demimbu,16.22,debit,Pharmacy,Credit Card 1
+1/18/2019,Viva,7.92,debit,Groceries,Credit Card 1
+1/18/2019,Feedfish,9.42,debit,Food & Dining,Credit Card 1
+1/19/2019,Realmix,17,debit,Restaurants,Credit Card 1
+1/19/2019,Rhyzio,16.7,debit,Groceries,Credit Card 1
+1/19/2019,Yozio,7.58,debit,Groceries,Credit Card 1
+1/20/2019,Viva,59.1,debit,Groceries,Credit Card 1
+1/20/2019,Dabtype,33.72,debit,Restaurants,Credit Card 1
+1/23/2019,Edgepulse,11.5,debit,Public Transportation,Credit Card 1
+1/23/2019,InnoZ,9.74,debit,Fast Food,Credit Card 1
+1/25/2019,Vinder,20.76,debit,Rental Car & Taxi,Credit Card 1
+1/25/2019,Yabox,33,debit,Restaurants,Credit Card 1
+1/26/2019,Edgepulse,11.5,debit,Public Transportation,Credit Card 1
+1/26/2019,Tagcat,92.19,debit,Restaurants,Credit Card 1
+1/26/2019,Feedfish,10.89,debit,Food & Dining,Credit Card 1
+1/26/2019,Trudeo,10.99,debit,Movies & DVDs,Credit Card 1
+1/26/2019,Mybuzz,16.27,debit,Restaurants,Credit Card 1
+1/27/2019,Devpoint,6.37,debit,Coffee Shops,Credit Card 1
+1/28/2019,Brainlounge,140.15,debit,Restaurants,Credit Card 1
+1/28/2019,Quatz,35.85,debit,Restaurants,Credit Card 1
+1/29/2019,Viva,11.89,debit,Groceries,Credit Card 1
+1/30/2019,Skyvu,15.55,debit,Fast Food,Credit Card 1
+1/31/2019,Demizz,1580.34,credit,Paycheck,Banking Account
+1/31/2019,Wordify,5.95,debit,Groceries,Credit Card 1
+1/31/2019,Yozio,3.6,debit,Groceries,Credit Card 1
+02/01/2019,Skyba,49,debit,Gym,Credit Card 1
+02/01/2019,Edgepulse,11.5,debit,Public Transportation,Credit Card 1
+02/01/2019,Viva,15.71,debit,Groceries,Credit Card 1
+02/01/2019,Latz,25.56,debit,Fast Food,Credit Card 1
+02/01/2019,Trudoo,13.16,debit,Restaurants,Credit Card 1
+2/1/2019,Buzzshare,1150,debit,Mortgage & Rent,Banking Account
+02/02/2019,Edgepulse,11.5,debit,Public Transportation,Credit Card 1
+02/02/2019,Photobean,121,debit,Public Transportation,Credit Card 1
+02/02/2019,Omba,53,debit,Alcohol & Bars,Credit Card 1
+02/02/2019,Yozio,3.6,debit,Groceries,Credit Card 1
+02/03/2019,Edgepulse,11.5,debit,Public Transportation,Credit Card 1
+02/03/2019,Edgepulse,11.5,debit,Public Transportation,Credit Card 1
+02/03/2019,Youspan,83.49,debit,Food & Dining,Credit Card 1
+02/03/2019,Twimbo,34.03,debit,Restaurants,Credit Card 1
+02/03/2019,Topiczoom,74.06,debit,Restaurants,Credit Card 1
+02/03/2019,Oyope,17.24,debit,Food & Dining,Credit Card 1
+02/04/2019,Photobean,45,debit,Amusement,Credit Card 1
+02/04/2019,Innotype,57.87,debit,Groceries,Credit Card 1
+02/04/2019,Eadel,36.09,debit,Alcohol & Bars,Credit Card 2
+02/06/2019,Edgepulse,11.5,debit,Public Transportation,Credit Card 1
+02/06/2019,Viva,10.05,debit,Groceries,Credit Card 1
+02/07/2019,Edgepulse,11.5,debit,Public Transportation,Credit Card 1
+02/07/2019,Photobug,5.75,debit,Fast Food,Credit Card 1
+02/08/2019,Podcat,1.25,debit,Office Supplies,Credit Card 1
+02/08/2019,Youspan,275,debit,Vacation,Banking Account
+02/09/2019,Viva,5.29,debit,Groceries,Credit Card 1
+02/09/2019,Vinder,23.92,debit,Rental Car & Taxi,Credit Card 1
+02/09/2019,Yodoo,8.97,debit,Rental Car & Taxi,Credit Card 1
+02/09/2019,Eidel,17.02,debit,Rental Car & Taxi,Credit Card 1
+2/10/2019,Gigashots,31.96,debit,Rental Car & Taxi,Credit Card 1
+2/10/2019,Gigashots,5.13,debit,Rental Car & Taxi,Credit Card 1
+2/10/2019,Dablist,33.33,debit,Restaurants,Credit Card 1
+2/10/2019,Gabcube,28.47,debit,Pharmacy,Credit Card 1
+2/10/2019,Eayo,59.59,debit,Restaurants,Credit Card 1
+2/11/2019,Flipstorm,3.5,debit,ATM Fee,Banking Account
+2/11/2019,Flipstorm,100,debit,Cash & ATM,Banking Account
+2/11/2019,Yamia,30,debit,Parking,Credit Card 1
+2/11/2019,Gigaclub,18.25,debit,Restaurants,Credit Card 1
+2/12/2019,Oyoyo,2.08,debit,Food & Dining,Credit Card 1
+2/12/2019,Myworks,27.97,debit,Groceries,Credit Card 1
+2/12/2019,Edgewire,16.15,debit,Restaurants,Credit Card 1
+2/13/2019,Trudeo,7.35,debit,Office Supplies,Credit Card 1
+2/13/2019,Dynabox,36.81,debit,Restaurants,Credit Card 1
+2/14/2019,Zoomlounge,29.73,debit,Restaurants,Credit Card 1
+2/14/2019,Gigashots,9.6,debit,Rental Car & Taxi,Credit Card 1
+2/14/2019,Gigashots,7.3,debit,Rental Car & Taxi,Credit Card 1
+2/14/2019,Jabbersphere,14.72,debit,Fast Food,Credit Card 1
+2/14/2019,Ooba,33.08,debit,Alcohol & Bars,Credit Card 1
+2/14/2019,Jetpulse,33.55,debit,Restaurants,Credit Card 2
+2/15/2019,Flipstorm,3.5,debit,ATM Fee,Banking Account
+2/15/2019,Flipstorm,100,debit,Cash & ATM,Banking Account
+2/15/2019,Demizz,1580.33,credit,Paycheck,Banking Account
+2/15/2019,Gigashots,9.65,debit,Rental Car & Taxi,Credit Card 1
+2/15/2019,Gigashots,2,debit,Rental Car & Taxi,Credit Card 1
+2/16/2019,Gigashots,11.18,debit,Rental Car & Taxi,Credit Card 1
+2/16/2019,Twitterlist,53.4,debit,Food & Dining,Credit Card 1
+2/16/2019,Skaboo,83.87,debit,Vacation,Credit Card 1
+2/16/2019,Skaboo,20,debit,Vacation,Credit Card 1
+2/16/2019,Photojam,112.08,debit,Groceries,Credit Card 1
+2/17/2019,Trilith,31.15,debit,Restaurants,Credit Card 2
+2/17/2019,Thoughtbeat,40.43,debit,Restaurants,Credit Card 1
+2/18/2019,Roombo,27.09,debit,Rental Car & Taxi,Credit Card 1
+2/19/2019,Edgepulse,11.5,debit,Public Transportation,Credit Card 1
+2/19/2019,Gigashots,93.79,debit,Rental Car & Taxi,Credit Card 1
+2/19/2019,Eazzy,60.88,debit,Groceries,Credit Card 1
+2/21/2019,Edgepulse,11.5,debit,Public Transportation,Credit Card 1
+2/21/2019,Oyope,100,debit,Mortgage & Rent,Credit Card 1
+2/21/2019,Katz,13.05,debit,Alcohol & Bars,Credit Card 1
+2/23/2019,Teklist,4,debit,Coffee Shops,Credit Card 1
+2/24/2019,Edgepulse,107.25,debit,Public Transportation,Credit Card 1
+2/24/2019,Yodoo,13,debit,Rental Car & Taxi,Credit Card 1
+2/24/2019,Skiptube,38,debit,Food & Dining,Credit Card 1
+2/24/2019,Skiptube,102,debit,Food & Dining,Credit Card 1
+2/24/2019,Topicstorm,46.2,debit,Alcohol & Bars,Credit Card 1
+2/24/2019,Twitterwire,35.89,debit,Restaurants,Credit Card 1
+2/25/2019,Gigashots,5,debit,Rental Car & Taxi,Credit Card 1
+2/26/2019,Viva,5.52,debit,Groceries,Credit Card 1
+2/26/2019,Trudeo,10.99,debit,Movies & DVDs,Credit Card 1
+2/28/2019,Demizz,1580.34,credit,Paycheck,Banking Account
+2/28/2019,Rooxo,11.4,debit,Restaurants,Credit Card 1
+03/01/2019,Skyba,49,debit,Gym,Credit Card 1
+03/01/2019,Viva,8.78,debit,Groceries,Credit Card 1
+03/01/2019,Gevee,4.9,debit,Food & Dining,Credit Card 1
+03/01/2019,Flashdog,4.36,debit,Fast Food,Credit Card 1
+03/01/2019,Omba,60.6,debit,Alcohol & Bars,Credit Card 1
+03/02/2019,Topicblab,14.1,debit,Restaurants,Credit Card 1
+03/04/2019,Youspan,35,debit,Transfer,Banking Account
+03/04/2019,Youspan,50,debit,Transfer,Banking Account
+03/05/2019,Gevee,4.9,debit,Food & Dining,Credit Card 1
+03/05/2019,Youspan,83.49,debit,Groceries,Credit Card 1
+03/06/2019,Viva,13.77,debit,Groceries,Credit Card 1
+03/06/2019,Photobean,121,debit,Public Transportation,Credit Card 1
+03/06/2019,Jabbersphere,24.99,debit,Entertainment,Credit Card 2
+03/07/2019,Edgepulse,11.5,debit,Public Transportation,Credit Card 1
+03/07/2019,Wordify,4.99,debit,Groceries,Credit Card 1
+03/07/2019,Youspan,50,debit,Transfer,Banking Account
+03/08/2019,Gevee,4.9,debit,Food & Dining,Credit Card 1
+03/09/2019,Edgepulse,11.5,debit,Public Transportation,Credit Card 1
+03/09/2019,Fatz,852.49,debit,Furnishings,Credit Card 1
+3/11/2019,Youspan,102.24,debit,Furnishings,Credit Card 1
+3/11/2019,Npath,30.05,debit,Restaurants,Credit Card 1
+3/11/2019,Cogidoo,36.24,debit,Restaurants,Credit Card 1
+3/12/2019,Ainyx,341.41,debit,Furnishings,Credit Card 1
+3/12/2019,Ainyx,276.95,debit,Furnishings,Credit Card 1
+3/12/2019,Viva,2.69,debit,Groceries,Credit Card 1
+3/12/2019,Meevee,14.14,debit,Alcohol & Bars,Credit Card 1
+3/12/2019,Buzzshare,1150,credit,Mortgage & Rent,Banking Account
+3/14/2019,Viva,13.47,debit,Groceries,Credit Card 1
+3/15/2019,Demizz,1580.33,credit,Paycheck,Banking Account
+3/15/2019,Gevee,4.9,debit,Food & Dining,Credit Card 1
+3/16/2019,Rhyzio,9.95,debit,Fast Food,Credit Card 1
+3/16/2019,Rhyzio,10.75,debit,Groceries,Credit Card 1
+3/17/2019,Brainverse,54.94,debit,Groceries,Credit Card 1
+3/17/2019,Centidel,93.75,debit,Restaurants,Credit Card 1
+3/17/2019,Topicblab,27.98,debit,Restaurants,Credit Card 1
+3/18/2019,Youspan,25.03,credit,Furnishings,Credit Card 1
+3/18/2019,Youspan,282.97,debit,Furnishings,Credit Card 1
+3/18/2019,Voomm,160,debit,Cash & ATM,Banking Account
+3/18/2019,Gabcube,35,debit,Pharmacy,Credit Card 1
+3/18/2019,Trunyx,14.13,debit,Coffee Shops,Credit Card 1
+3/18/2019,Quire,16.01,debit,Restaurants,Credit Card 1
+3/18/2019,Blogtags,10.88,debit,Fast Food,Credit Card 1
+3/19/2019,Viva,7.98,debit,Groceries,Credit Card 1
+3/19/2019,Viva,9.28,debit,Groceries,Credit Card 1
+3/19/2019,Dablist,76.2,debit,Electronics & Software,Credit Card 1
+3/19/2019,Dablist,707.68,debit,Electronics & Software,Credit Card 1
+3/19/2019,Trunyx,5.32,debit,Fast Food,Credit Card 1
+3/19/2019,Youspan,36,debit,Transfer,Banking Account
+3/20/2019,Pixoboo,55.64,debit,Office Supplies,Credit Card 1
+3/20/2019,Eazzy,23.24,debit,Groceries,Credit Card 1
+3/21/2019,Viva,46.57,debit,Groceries,Credit Card 1
+3/21/2019,Tazz,136.03,debit,Gifts & Donations,Credit Card 1
+3/21/2019,Geba,1056.09,debit,Furnishings,Credit Card 1
+3/22/2019,Buzzshare,25.64,debit,Alcohol & Bars,Credit Card 1
+3/22/2019,Browsebug,18.5,debit,Alcohol & Bars,Credit Card 1
+3/22/2019,Zoomcast,44.99,debit,Internet,Banking Account
+3/23/2019,Skiba,91.92,debit,Restaurants,Credit Card 1
+3/24/2019,Youtags,173.16,debit,Alcohol & Bars,Credit Card 1
+3/24/2019,Buzzshare,13.98,debit,Alcohol & Bars,Credit Card 2
+3/24/2019,Omba,44,debit,Alcohol & Bars,Credit Card 1
+3/25/2019,Edgepulse,11.5,debit,Public Transportation,Credit Card 1
+3/25/2019,Edgepulse,11.5,debit,Public Transportation,Credit Card 1
+3/25/2019,Oyoyo,2.45,debit,Food & Dining,Credit Card 1
+3/25/2019,Youspan,19,debit,Transfer,Banking Account
+3/25/2019,Youspan,50,debit,Transfer,Banking Account
+3/26/2019,Jayo,28.17,debit,Restaurants,Credit Card 1
+3/26/2019,Viva,23.94,debit,Groceries,Credit Card 1
+3/26/2019,Trudeo,10.99,debit,Movies & DVDs,Credit Card 1
+3/27/2019,Vidoo,29.99,debit,Movies & DVDs,Credit Card 1
+3/28/2019,Viva,7.98,debit,Groceries,Credit Card 1
+3/28/2019,Browsetype,7.62,debit,Food & Dining,Credit Card 1
+3/28/2019,Oyope,23,debit,Coffee Shops,Credit Card 1
+3/28/2019,Youspan,60,debit,Transfer,Banking Account
+3/29/2019,Demizz,1580.34,credit,Paycheck,Banking Account
+3/29/2019,Youspan,15,debit,Transfer,Banking Account
+3/30/2019,Wordify,62.1,debit,Amusement,Credit Card 1
+3/30/2019,Viva,9.03,debit,Groceries,Credit Card 1
+3/30/2019,Tanoodle,35.26,debit,Restaurants,Credit Card 1
+3/30/2019,Pixoboo,79.8,debit,Clothing,Credit Card 1
+3/31/2019,Gigashots,26.58,debit,Rental Car & Taxi,Credit Card 1
+3/31/2019,Lazz,103.01,debit,Alcohol & Bars,Credit Card 1
+04/01/2019,Skyba,49,debit,Gym,Credit Card 1
+04/01/2019,Skyvu,224.08,debit,Gifts & Donations,Credit Card 1
+04/01/2019,Oyoloo,54.96,debit,Alcohol & Bars,Credit Card 1
+04/01/2019,Blogtags,9.53,debit,Fast Food,Credit Card 1
+04/01/2019,Buzzshare,31,debit,Mortgage & Rent,Banking Account
+04/01/2019,Buzzshare,1150,debit,Mortgage & Rent,Banking Account
+04/02/2019,Viva,61.05,debit,Groceries,Credit Card 1
+04/02/2019,Livefish,11.97,debit,Restaurants,Credit Card 1
+04/02/2019,Topicblab,14.43,debit,Restaurants,Credit Card 1
+04/03/2019,Viva,11.97,debit,Groceries,Credit Card 1
+04/03/2019,Brainverse,11.95,debit,Groceries,Credit Card 1
+04/03/2019,Gabcube,17.17,debit,Pharmacy,Credit Card 1
+04/03/2019,Lajo,342.95,debit,Shopping,Credit Card 1
+04/03/2019,Skyvu,17.42,debit,Restaurants,Credit Card 1
+04/04/2019,Edgepulse,11.5,debit,Public Transportation,Credit Card 1
+04/04/2019,Youspan,83.49,debit,Groceries,Credit Card 1
+04/05/2019,Demimbu,12.51,debit,Pharmacy,Credit Card 1
+04/06/2019,Kwideo,50,debit,Alcohol & Bars,Credit Card 1
+04/06/2019,Photobean,121,debit,Public Transportation,Credit Card 1
+04/06/2019,Thoughtsphere,11.43,debit,Restaurants,Credit Card 1
+04/07/2019,Trunyx,12.27,debit,Coffee Shops,Credit Card 1
+04/07/2019,LiveZ,52.59,debit,Alcohol & Bars,Credit Card 1
+04/07/2019,Browsedrive,8,debit,Restaurants,Credit Card 1
+04/07/2019,Demimbu,28.82,debit,Pharmacy,Credit Card 1
+04/07/2019,Blogtags,10.88,debit,Fast Food,Credit Card 1
+04/08/2019,Youspan,72.35,debit,Furnishings,Credit Card 1
+04/08/2019,Kamba,1342,debit,State Tax,Banking Account
+04/08/2019,Buzzshare,79,debit,Mortgage & Rent,Banking Account
+04/09/2019,Vipe,52.89,debit,Restaurants,Credit Card 1
+4/10/2019,Viva,36.75,debit,Groceries,Credit Card 1
+4/10/2019,Viva,8.36,debit,Groceries,Credit Card 1
+4/13/2019,Jabbersphere,24,debit,Alcohol & Bars,Credit Card 1
+4/13/2019,Latz,15.11,debit,Fast Food,Credit Card 1
+4/14/2019,Topicstorm,16.06,debit,Alcohol & Bars,Credit Card 1
+4/15/2019,Demizz,1580.22,credit,Paycheck,Banking Account
+4/15/2019,Trunyx,8.7,debit,Coffee Shops,Credit Card 1
+4/16/2019,Viva,55.28,debit,Groceries,Credit Card 1
+4/16/2019,Livefish,11.97,debit,Restaurants,Credit Card 1
+4/16/2019,Eire,664,credit,State Tax,Banking Account
+4/17/2019,Viva,11.97,debit,Groceries,Credit Card 1
+4/17/2019,Dynabox,109.93,debit,Gifts & Donations,Credit Card 1
+4/17/2019,Jabberbean,209.98,debit,Gifts & Donations,Credit Card 1
+4/17/2019,Npath,1111.04,credit,Taxes,Banking Account
+4/18/2019,Demimbu,10.42,debit,Pharmacy,Credit Card 1
+4/18/2019,DabZ,77.5,debit,Groceries,Credit Card 1
+4/18/2019,Katz,37,debit,Alcohol & Bars,Credit Card 1
+4/19/2019,Yodoo,15.3,debit,Rental Car & Taxi,Credit Card 1
+4/21/2019,Gigashots,16.85,debit,Rental Car & Taxi,Credit Card 1
+4/21/2019,Gigashots,14.62,debit,Rental Car & Taxi,Credit Card 1
+4/21/2019,Rooxo,11.4,debit,Restaurants,Credit Card 1
+4/21/2019,Myworks,77.24,debit,Alcohol & Bars,Credit Card 1
+4/22/2019,Edgepulse,23,debit,Public Transportation,Credit Card 1
+4/22/2019,Yodoo,29.67,debit,Rental Car & Taxi,Credit Card 1
+4/22/2019,Buzzshare,34,debit,Mortgage & Rent,Banking Account
+4/23/2019,Brainverse,19.05,debit,Fast Food,Credit Card 1
+4/24/2019,Viva,53.67,debit,Groceries,Credit Card 1
+4/24/2019,Quinu,12.79,debit,Alcohol & Bars,Credit Card 1
+4/25/2019,Innojam,39.63,debit,Pharmacy,Credit Card 1
+4/25/2019,Oyoyo,5.99,debit,Food & Dining,Credit Card 1
+4/25/2019,Buzzshare,93,debit,Mortgage & Rent,Banking Account
+4/26/2019,Jabbersphere,12,debit,Alcohol & Bars,Credit Card 1
+4/26/2019,Oyoyo,3.95,debit,Food & Dining,Credit Card 1
+4/26/2019,Trudeo,10.99,debit,Movies & DVDs,Credit Card 1
+4/26/2019,Gabvine,195,debit,Service Fee,Credit Card 1
+4/26/2019,DabZ,73.33,debit,Restaurants,Credit Card 1
+4/26/2019,DabZ,38.66,debit,Restaurants,Credit Card 1
+4/27/2019,Jabbersphere,18,debit,Alcohol & Bars,Credit Card 1
+4/27/2019,Yodoo,27.37,debit,Rental Car & Taxi,Credit Card 1
+4/27/2019,Demimbu,57.12,debit,Pharmacy,Credit Card 1
+4/28/2019,Oyoloo,32.37,debit,Alcohol & Bars,Credit Card 1
+4/28/2019,Rhycero,50.75,debit,Alcohol & Bars,Credit Card 1
+4/29/2019,Yodoo,13,debit,Rental Car & Taxi,Credit Card 1
+4/29/2019,Buzzshare,1150,debit,Mortgage & Rent,Banking Account
+4/30/2019,Demizz,1783.22,credit,Paycheck,Banking Account
+4/30/2019,InnoZ,9.74,debit,Fast Food,Credit Card 1
+4/30/2019,Twitterbeat,25,debit,Amusement,Credit Card 1
+05/01/2019,Skyba,49,debit,Gym,Credit Card 1
+05/01/2019,Viva,7.55,debit,Groceries,Credit Card 1
+05/01/2019,Gabcube,50.1,debit,Pharmacy,Credit Card 1
+05/01/2019,Oyoyo,7.11,debit,Food & Dining,Credit Card 1
+05/01/2019,Topdrive,15.24,debit,Restaurants,Credit Card 1
+05/03/2019,Voomm,80,debit,Cash & ATM,Banking Account
+05/03/2019,Eidel,76,debit,Alcohol & Bars,Credit Card 1
+05/04/2019,Youspan,83.49,debit,Groceries,Credit Card 1
+05/05/2019,Livefish,21.75,debit,Restaurants,Credit Card 1
+05/05/2019,Snaptags,12.65,debit,Fast Food,Credit Card 1
+05/05/2019,Topicblab,6.53,debit,Restaurants,Credit Card 1
+05/07/2019,Photobean,127,debit,Public Transportation,Credit Card 1
+05/08/2019,Oyoyo,7.11,debit,Food & Dining,Credit Card 1
+05/08/2019,Bubblemix,101.25,debit,Personal Care,Credit Card 1
+05/08/2019,Flashdog,5.76,debit,Fast Food,Credit Card 1
+05/08/2019,Realfire,37.24,debit,Food & Dining,Credit Card 1
+05/08/2019,Mydeo,22.61,debit,Groceries,Credit Card 1
+05/09/2019,Eadel,101.92,debit,Restaurants,Credit Card 1
+5/10/2019,Dynabox,30.82,debit,Rental Car & Taxi,Credit Card 1
+5/10/2019,Riffwire,15.79,debit,Restaurants,Credit Card 1
+5/10/2019,Vipe,39.17,debit,Alcohol & Bars,Credit Card 1
+5/12/2019,Twitterwire,12.23,debit,Restaurants,Credit Card 2
+5/13/2019,Brainverse,10.88,debit,Fast Food,Credit Card 1
+5/13/2019,Voomm,60,debit,Cash & ATM,Banking Account
+5/13/2019,Zazio,87.58,debit,Restaurants,Credit Card 1
+5/14/2019,Viva,23.53,debit,Groceries,Credit Card 1
+5/15/2019,Demizz,1783.22,credit,Paycheck,Banking Account
+5/15/2019,Dynabox,13.57,debit,Rental Car & Taxi,Credit Card 1
+5/15/2019,Tagcat,104.02,debit,Alcohol & Bars,Credit Card 1
+5/16/2019,Viva,11.97,debit,Groceries,Credit Card 1
+5/16/2019,Wikivu,204.69,debit,Clothing,Credit Card 1
+5/16/2019,Babbleset,6.48,debit,Coffee Shops,Credit Card 1
+5/19/2019,Edgepulse,11.5,debit,Public Transportation,Credit Card 1
+5/19/2019,Gabcube,22.53,debit,Pharmacy,Credit Card 1
+5/19/2019,Podcat,134.41,debit,Restaurants,Credit Card 1
+5/19/2019,Layo,12.96,debit,Fast Food,Credit Card 1
+5/20/2019,Voomm,32,debit,Restaurants,Credit Card 2
+5/20/2019,Quatz,59.9,debit,Restaurants,Credit Card 1
+5/20/2019,Npath,33.72,debit,Home Services,Credit Card 1
+5/21/2019,Jabbersphere,335.6,debit,Air Travel,Credit Card 1
+5/21/2019,Snaptags,12.65,debit,Fast Food,Credit Card 1
+5/21/2019,Edgeblab,10.89,debit,Fast Food,Credit Card 1
+5/21/2019,JumpXS,157.95,debit,Clothing,Credit Card 1
+5/22/2019,Feedspan,50.77,debit,Restaurants,Credit Card 1
+5/22/2019,Mynte,66.96,debit,Utilities,Banking Account
+5/22/2019,Yodoo,19.32,debit,Rental Car & Taxi,Credit Card 1
+5/22/2019,Realbridge,8.03,debit,Coffee Shops,Credit Card 1
+5/22/2019,Zoomcast,116,debit,Internet,Banking Account
+5/23/2019,Jazzy,43.05,debit,Groceries,Credit Card 1
+5/23/2019,Kimia,15.24,debit,Restaurants,Credit Card 1
+5/24/2019,Realbuzz,102.19,debit,Restaurants,Credit Card 1
+5/25/2019,Yodoo,19.9,debit,Rental Car & Taxi,Credit Card 1
+5/25/2019,Kwideo,14,debit,Alcohol & Bars,Credit Card 1
+5/25/2019,Edgeify,41.84,debit,Restaurants,Credit Card 1
+5/26/2019,Trudeo,12.99,debit,Movies & DVDs,Credit Card 1
+5/27/2019,Edgepulse,23,debit,Public Transportation,Credit Card 1
+5/27/2019,Brainverse,10.88,debit,Fast Food,Credit Card 1
+5/27/2019,Realfire,34.56,debit,Food & Dining,Credit Card 1
+5/28/2019,Oyoyo,5.39,debit,Food & Dining,Credit Card 1
+5/28/2019,Twitterwire,30.58,debit,Restaurants,Credit Card 1
+5/28/2019,Buzzshare,1150,debit,Mortgage & Rent,Banking Account
+5/29/2019,Viva,25.53,debit,Groceries,Credit Card 1
+5/29/2019,Dynabox,16.45,debit,Rental Car & Taxi,Credit Card 1
+5/29/2019,Photobean,100.21,debit,Restaurants,Credit Card 1
+5/30/2019,Meembee,11.97,debit,Food & Dining,Credit Card 1
+5/30/2019,Pixope,127.5,debit,Entertainment,Credit Card 1
+5/31/2019,Demizz,1783.22,credit,Paycheck,Banking Account
+5/31/2019,Viva,7.98,debit,Groceries,Credit Card 1
+5/31/2019,Devcast,119.75,debit,Entertainment,Credit Card 1
+5/31/2019,Voomm,80,debit,Cash & ATM,Banking Account
+5/31/2019,Latz,18.48,debit,Fast Food,Credit Card 1
+06/01/2019,Skyba,49,debit,Gym,Credit Card 1
+06/01/2019,Gigashots,23.56,debit,Rental Car & Taxi,Credit Card 1
+06/01/2019,Gigashots,22.42,debit,Rental Car & Taxi,Credit Card 1
+06/01/2019,Gabcube,41.1,debit,Pharmacy,Credit Card 1
+06/02/2019,Skyvu,374.76,debit,Shopping,Credit Card 1
+06/02/2019,Demimbu,14.68,debit,Pharmacy,Credit Card 1
+06/02/2019,Buzzster,126,debit,Restaurants,Credit Card 1
+06/03/2019,Jayo,41.92,debit,Alcohol & Bars,Credit Card 1
+06/03/2019,Jayo,52.99,debit,Alcohol & Bars,Credit Card 1
+06/03/2019,Trunyx,15.2,debit,Coffee Shops,Credit Card 1
+06/03/2019,Youspan,83.49,debit,Restaurants,Credit Card 1
+06/03/2019,Skidoo,16.09,debit,Restaurants,Credit Card 1
+06/04/2019,Viva,11.06,debit,Groceries,Credit Card 1
+06/04/2019,Youopia,13.5,debit,Restaurants,Credit Card 1
+06/06/2019,Viva,6.98,debit,Groceries,Credit Card 1
+06/06/2019,Bubblebox,3.99,debit,Music,Credit Card 1
+06/06/2019,Dynabox,13.57,debit,Rental Car & Taxi,Credit Card 1
+06/06/2019,Jabbersphere,130.65,debit,Restaurants,Credit Card 1
+06/07/2019,Viva,5.78,debit,Groceries,Credit Card 1
+06/07/2019,Voomm,80,debit,Cash & ATM,Banking Account
+06/07/2019,Photobean,127,debit,Public Transportation,Credit Card 1
+06/07/2019,Edgeblab,12.52,debit,Fast Food,Credit Card 1
+06/07/2019,Podcat,7.65,debit,Office Supplies,Credit Card 1
+06/08/2019,Skyvu,108.86,debit,Shopping,Credit Card 1
+06/09/2019,Gigashots,12.94,debit,Rental Car & Taxi,Credit Card 1
+06/09/2019,Youbridge,42,debit,Alcohol & Bars,Credit Card 1
+06/09/2019,Yodoo,27.37,debit,Rental Car & Taxi,Credit Card 1
+06/09/2019,Fivebridge,233.21,debit,Entertainment,Credit Card 1
+06/09/2019,Pixoboo,48.98,debit,Furnishings,Credit Card 1
+06/09/2019,Jabbersphere,70,debit,Alcohol & Bars,Credit Card 1
+6/10/2019,Eabox,17.41,debit,Food & Dining,Credit Card 1
+6/10/2019,Layo,23.16,debit,Rental Car & Taxi,Credit Card 1
+6/11/2019,Viva,26.42,debit,Groceries,Credit Card 1
+6/11/2019,Oyope,140,debit,Travel,Banking Account
+6/12/2019,Zazio,4.34,debit,Fast Food,Credit Card 1
+6/12/2019,Dynabox,25.98,debit,Pharmacy,Credit Card 1
+6/12/2019,Innojam,147.5,debit,Gifts & Donations,Credit Card 1
+6/12/2019,Trudoo,10.82,debit,Restaurants,Credit Card 1
+6/13/2019,Roomm,73.52,debit,Home Services,Credit Card 1
+6/13/2019,Ozu,50,debit,Health & Fitness,Credit Card 1
+6/13/2019,Innojam,4.38,debit,Pharmacy,Credit Card 1
+6/13/2019,Devpoint,11.97,debit,Restaurants,Credit Card 1
+6/13/2019,Topicblab,13.34,debit,Restaurants,Credit Card 1
+6/13/2019,Jabbersphere,137.41,debit,Restaurants,Credit Card 1
+6/14/2019,Demizz,1708.33,credit,Paycheck,Banking Account
+6/14/2019,Gigashots,42.42,debit,Rental Car & Taxi,Credit Card 1
+6/15/2019,Innojam,16,debit,Gifts & Donations,Credit Card 1
+6/15/2019,Innojam,15.95,debit,Gifts & Donations,Credit Card 1
+6/15/2019,Innojam,12.95,debit,Gifts & Donations,Credit Card 1
+6/16/2019,Kimia,20.62,debit,Restaurants,Credit Card 1
+6/16/2019,Browseblab,24.75,debit,Movies & DVDs,Credit Card 1
+6/17/2019,Brainverse,13.5,debit,Fast Food,Credit Card 1
+6/18/2019,Edgepulse,30.5,debit,Public Transportation,Credit Card 1
+6/18/2019,Gigashots,36.04,debit,Rental Car & Taxi,Credit Card 1
+6/18/2019,InnoZ,9.74,debit,Fast Food,Credit Card 1
+6/19/2019,Edgepulse,30.5,debit,Public Transportation,Credit Card 1
+6/19/2019,Viva,15.9,debit,Groceries,Credit Card 1
+6/19/2019,Teklist,8.75,debit,Coffee Shops,Credit Card 1
+6/20/2019,Kwinu,55,debit,Restaurants,Credit Card 1
+6/20/2019,Pixoboo,119.7,debit,Clothing,Credit Card 1
+6/21/2019,Jabbersphere,45,debit,Alcohol & Bars,Credit Card 1
+6/21/2019,Edgepulse,30.5,debit,Public Transportation,Credit Card 1
+6/21/2019,Viva,7.6,debit,Groceries,Credit Card 1
+6/21/2019,Ailane,54.73,debit,Alcohol & Bars,Credit Card 1
+6/21/2019,Demimbu,24.97,debit,Pharmacy,Credit Card 1
+6/22/2019,Realfire,45.72,debit,Food & Dining,Credit Card 1
+6/23/2019,Jaxworks,56.36,debit,Restaurants,Credit Card 1
+6/23/2019,Photobean,22,debit,Public Transportation,Credit Card 1
+6/23/2019,Innojam,20.7,debit,Alcohol & Bars,Credit Card 1
+6/24/2019,Aimbo,19.35,debit,Restaurants,Credit Card 2
+6/24/2019,Meembee,11.44,debit,Restaurants,Credit Card 2
+6/24/2019,Jabbersphere,84.97,debit,Restaurants,Credit Card 1
+6/24/2019,Eazzy,23.44,debit,Groceries,Credit Card 1
+6/25/2019,Trudeo,12.99,debit,Movies & DVDs,Credit Card 1
+6/26/2019,Yodoo,14.14,debit,Rental Car & Taxi,Credit Card 1
+6/26/2019,Photojam,25,debit,Groceries,Credit Card 1
+6/27/2019,Viva,21.2,debit,Groceries,Credit Card 1
+6/27/2019,Flashdog,4.36,debit,Fast Food,Credit Card 1
+6/28/2019,Demizz,1723.39,credit,Paycheck,Banking Account
+6/28/2019,Realbuzz,91.46,debit,Restaurants,Credit Card 1
+6/28/2019,LiveZ,30.41,debit,Restaurants,Credit Card 1
+6/28/2019,Buzzshare,1150,debit,Mortgage & Rent,Banking Account
+6/29/2019,Realbridge,8,debit,Coffee Shops,Credit Card 1
+6/29/2019,Browsecat,24.6,debit,Restaurants,Credit Card 1
+6/30/2019,Snaptags,12.65,debit,Fast Food,Credit Card 1
+07/01/2019,Skyba,49,debit,Gym,Credit Card 1
+07/01/2019,Viva,11.99,debit,Groceries,Credit Card 1
+07/01/2019,Mynte,65.86,debit,Utilities,Banking Account
+07/01/2019,Realmix,13,debit,Restaurants,Credit Card 1
+07/01/2019,Zoomcast,77.26,debit,Internet,Banking Account
+07/02/2019,Viva,75.11,debit,Groceries,Credit Card 1
+07/02/2019,Snaptags,12.65,debit,Fast Food,Credit Card 1
+07/03/2019,Jabbersphere,60,debit,Alcohol & Bars,Credit Card 1
+07/03/2019,Yodoo,13,debit,Rental Car & Taxi,Credit Card 1
+07/03/2019,Feedfish,13.07,debit,Food & Dining,Credit Card 1
+07/03/2019,Youspan,83.49,debit,Restaurants,Credit Card 1
+07/04/2019,Thoughtmix,41.24,debit,Food & Dining,Credit Card 1
+07/05/2019,Edgepulse,23,debit,Public Transportation,Credit Card 1
+07/05/2019,Cogidoo,46.69,debit,Fast Food,Credit Card 1
+07/06/2019,Gigashots,9.58,debit,Rental Car & Taxi,Credit Card 1
+07/07/2019,Skyvu,14.16,debit,Shopping,Credit Card 1
+07/07/2019,Edgeblab,30.15,debit,Alcohol & Bars,Credit Card 1
+07/07/2019,Gabtune,86.01,debit,Restaurants,Credit Card 1
+07/07/2019,InnoZ,9.74,debit,Fast Food,Credit Card 1
+07/07/2019,Photobean,127,debit,Public Transportation,Credit Card 1
+07/07/2019,InnoZ,107.96,debit,Sporting Goods,Credit Card 1
+07/07/2019,Buzzster,48.85,debit,Restaurants,Credit Card 1
+07/08/2019,Riffwire,15.79,debit,Restaurants,Credit Card 1
+7/10/2019,Gabtype,30.76,debit,Alcohol & Bars,Credit Card 1
+7/10/2019,Innojam,5.43,debit,Pharmacy,Credit Card 1
+7/10/2019,Vipe,15.08,debit,Restaurants,Credit Card 2
+7/10/2019,Bluezoom,3,debit,ATM Fee,Banking Account
+7/10/2019,Eayo,80,debit,Cash & ATM,Banking Account
+7/10/2019,Blogtags,55.82,debit,Restaurants,Credit Card 1
+7/10/2019,Jaxspan,21.18,debit,Shopping,Credit Card 1
+7/11/2019,Omba,28.29,debit,Alcohol & Bars,Credit Card 1
+7/11/2019,Youspan,80,debit,Transfer,Banking Account
+7/12/2019,Quamba,182.24,debit,Entertainment,Credit Card 1
+7/12/2019,Gigashots,8.63,debit,Rental Car & Taxi,Credit Card 1
+7/12/2019,Skyvu,29.32,debit,Restaurants,Credit Card 1
+7/12/2019,Gevee,10.07,debit,Food & Dining,Credit Card 1
+7/12/2019,Meemm,94.07,debit,Alcohol & Bars,Credit Card 1
+7/12/2019,Youspan,80,debit,Transfer,Banking Account
+7/13/2019,Gigashots,6.48,debit,Rental Car & Taxi,Credit Card 1
+7/13/2019,Trunyx,7.6,debit,Coffee Shops,Credit Card 1
+7/13/2019,Kwideo,80,debit,Alcohol & Bars,Credit Card 1
+7/13/2019,Oloo,20.14,debit,Restaurants,Credit Card 1
+7/13/2019,Dynabox,7.25,debit,Rental Car & Taxi,Credit Card 1
+7/13/2019,Abatz,59.8,debit,Entertainment,Credit Card 1
+7/13/2019,Abatz,8.55,debit,Fast Food,Credit Card 1
+7/15/2019,Demizz,1723.39,credit,Paycheck,Banking Account
+7/15/2019,Topicblab,14.1,debit,Restaurants,Credit Card 1
+7/16/2019,Viva,19.5,debit,Groceries,Credit Card 1
+7/16/2019,Skyvu,11.3,debit,Fast Food,Credit Card 1
+7/16/2019,Zoombox,15.77,debit,Fast Food,Credit Card 1
+7/16/2019,Muxo,16.1,debit,Alcohol & Bars,Credit Card 1
+7/17/2019,Buzzster,397.5,debit,Local Tax,Banking Account
+7/17/2019,Babbleset,24.5,debit,Clothing,Credit Card 1
+7/18/2019,Oyoloo,30.46,debit,Alcohol & Bars,Credit Card 1
+7/18/2019,Tanoodle,416.72,debit,Air Travel,Credit Card 1
+7/18/2019,Realfire,21.53,debit,Food & Dining,Credit Card 1
+7/19/2019,Skyvu,59.53,debit,Shopping,Credit Card 1
+7/19/2019,Teklist,3.5,debit,Coffee Shops,Credit Card 1
+7/20/2019,Yodoo,22.77,debit,Rental Car & Taxi,Credit Card 1
+7/20/2019,Demimbu,18.01,debit,Pharmacy,Credit Card 1
+7/20/2019,Avamba,25.2,debit,Gifts & Donations,Credit Card 1
+7/21/2019,Edgepulse,23,debit,Public Transportation,Credit Card 1
+7/21/2019,Dynabox,11.49,debit,Rental Car & Taxi,Credit Card 1
+7/22/2019,Viva,22.62,debit,Groceries,Credit Card 1
+7/22/2019,Dynabox,13.71,debit,Pharmacy,Credit Card 1
+7/23/2019,Viva,25.22,debit,Groceries,Credit Card 1
+7/25/2019,Viva,11.06,debit,Groceries,Credit Card 1
+7/25/2019,Trudeo,12.99,debit,Movies & DVDs,Credit Card 1
+7/26/2019,Tagfeed,56,debit,Mortgage & Rent,Credit Card 1
+7/26/2019,Trudoo,13.16,debit,Restaurants,Credit Card 1
+7/27/2019,Innojam,28.98,debit,Pharmacy,Credit Card 1
+7/27/2019,Topiclounge,18.98,debit,Restaurants,Credit Card 1
+7/27/2019,Quimba,36.49,debit,Alcohol & Bars,Credit Card 1
+7/27/2019,Brightbean,115.99,debit,Alcohol & Bars,Credit Card 1
+7/29/2019,Viva,26.83,debit,Groceries,Credit Card 1
+7/29/2019,Fliptune,234.06,debit,Clothing,Credit Card 1
+7/29/2019,Zoomcast,41.37,debit,Internet,Banking Account
+7/30/2019,Trudoo,9,debit,Restaurants,Credit Card 1
+7/31/2019,Demizz,1723.39,credit,Paycheck,Banking Account
+7/31/2019,Brainverse,10.89,debit,Fast Food,Credit Card 1
+7/31/2019,Mynte,48.31,debit,Utilities,Banking Account
+7/31/2019,Gabcube,20.68,debit,Pharmacy,Credit Card 1
+7/31/2019,Mita,66.6,debit,Restaurants,Credit Card 1
+08/01/2019,Skyba,49,debit,Gym,Credit Card 1
+08/01/2019,Skyvu,40.77,debit,Shopping,Credit Card 1
+08/01/2019,Jabbersphere,76.24,debit,Restaurants,Credit Card 1
+08/01/2019,Buzzshare,1150,debit,Mortgage & Rent,Banking Account
+08/02/2019,Ailane,10.87,debit,Groceries,Credit Card 1
+08/02/2019,Youspan,83.49,debit,Restaurants,Credit Card 1
+08/03/2019,Fatz,4.01,debit,Fast Food,Credit Card 1
+08/03/2019,Ailane,16.54,debit,Groceries,Credit Card 1
+08/04/2019,Skyvu,31.5,debit,Shopping,Credit Card 1
+08/04/2019,Edgepulse,23,debit,Public Transportation,Credit Card 1
+08/04/2019,Realbridge,11.42,debit,Coffee Shops,Credit Card 1
+08/04/2019,Twitterwire,21.54,debit,Restaurants,Credit Card 1
+08/05/2019,Viva,50.36,debit,Groceries,Credit Card 1
+08/05/2019,Viva,30.97,debit,Groceries,Credit Card 1
+08/05/2019,Youspan,70,debit,Transfer,Banking Account
+08/07/2019,Skyvu,14.16,debit,Shopping,Credit Card 1
+08/07/2019,Viva,4.99,debit,Groceries,Credit Card 1
+08/07/2019,Rhyzio,30.45,debit,Groceries,Credit Card 1
+08/08/2019,Voomm,60,debit,Cash & ATM,Banking Account
+08/08/2019,Rhybox,125.06,debit,Gifts & Donations,Credit Card 1
+08/09/2019,Jabbersphere,13,debit,Alcohol & Bars,Credit Card 1
+08/09/2019,Dynabox,20.29,debit,Rental Car & Taxi,Credit Card 1
+8/10/2019,Wordware,32.35,debit,Restaurants,Credit Card 1
+8/10/2019,Dynabox,15.3,debit,Rental Car & Taxi,Credit Card 1
+8/10/2019,Eazzy,25.15,debit,Restaurants,Credit Card 1
+8/11/2019,Demimbu,60.52,debit,Pharmacy,Credit Card 1
+8/12/2019,Eidel,76,debit,Alcohol & Bars,Credit Card 1
+8/12/2019,Quatz,58.8,debit,Restaurants,Credit Card 2
