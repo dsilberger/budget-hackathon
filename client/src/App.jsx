@@ -16,6 +16,7 @@ class App extends React.Component {
     };
 
     this.updateExpenses = this.updateExpenses.bind(this);
+    this.updateCategories = this.updateCategories.bind(this);
   }
 
   updateExpenses() {
