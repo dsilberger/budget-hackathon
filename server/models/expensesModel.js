@@ -36,7 +36,7 @@ const model = {
 
   getAllExpenses: () => {
     const q = `
-      select e.date, e.description, c.name category, e.accountName, e.amount100
+      select e.id, e.date, e.description, c.name category, e.accountName, e.amount100
       from Expenses e
       left outer join Categories c on c.id = e.categoryId`;
 
