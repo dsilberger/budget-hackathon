@@ -27,16 +27,16 @@ import api from "../api.js";
 //   </nav>
 // );
 
-const NavBar = () => (
+const NavBar = ({ setCurrentPage, currentPage }) => (
   <nav className="tabs is-centered">
     <ul>
-      <li className="is-active">
+      <li onClick={() => setCurrentPage("user")} className={`${currentPage === "user" ? "is-active" : ""}`}>
         <a>Profile</a>
       </li>
-      <li>
+      <li onClick={() => setCurrentPage("expenses")} className={`${currentPage === "expenses" ? "is-active" : ""}`}>
         <a>Expenses</a>
       </li>
-      <li>
+      <li onClick={() => setCurrentPage("analytics")} className={`${currentPage === "analytics" ? "is-active" : ""}`}>
         <a>Analytics</a>
       </li>
     </ul>

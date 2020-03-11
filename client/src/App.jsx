@@ -13,13 +13,14 @@ class App extends React.Component {
 
     this.state = {
       categoryList: [],
-
-      expenseList: []
+      expenseList: [],
+      currentPage: "user"
     };
 
     this.updateExpenses = this.updateExpenses.bind(this);
     this.addExpense = this.addExpense.bind(this);
     this.updateCategories = this.updateCategories.bind(this);
+    this.setCurrentPage = this.setCurrentPage.bind(this);
   }
 
   updateExpenses() {
@@ -32,6 +33,10 @@ class App extends React.Component {
 
   updateCategories() {
     api.fetchAllCategories().then(categoryList => this.setState({ categoryList }));
+  }
+
+  setCurrentPage(page) {
+    this.setState({ currentPage: page });
   }
 
   componentDidMount() {
@@ -47,10 +52,12 @@ class App extends React.Component {
             <h1 className="title">BearTracks Budget</h1>
           </div>
         </section>
-        <NavBar />
-        <UserForm />
-        <ExpensesForm categories={this.state.categoryList} addExpense={this.addExpense} />
-        <ExpenseList expenseList={this.state.expenseList} />
+        <NavBar setCurrentPage={this.setCurrentPage} currentPage={this.state.currentPage} />
+        {this.state.currentPage === "user" && <UserForm />}
+        {this.state.currentPage === "expenses" && (
+          <ExpensesForm categories={this.state.categoryList} addExpense={this.addExpense} />
+        )}
+        {this.state.currentPage === "expenses" && <ExpenseList expenseList={this.state.expenseList} />}
       </div>
     );
   }
