@@ -31,13 +31,13 @@ const ExpensesForm = ({ categories, addExpense }) => {
       </div>
       <div className="box">
         <div className="columns">
-          <div className="column is-narrow">
+          <div className="column is-2">
             Date
             <div className="container">
               <input className="input" name="date" type="date" value={date} onChange={e => setDate(e.target.value)} />
             </div>
           </div>
-          <div className="column is-narrow">
+          <div className="column is-2">
             Amount
             <div className="container">
               <input
@@ -78,7 +78,7 @@ const ExpensesForm = ({ categories, addExpense }) => {
               />
             </div>
           </div>
-          <div className="column is-narrow">
+          <div className="column is-2">
             Account
             <div className="container">
               <input
