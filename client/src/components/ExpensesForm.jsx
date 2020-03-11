@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import api from "../api.js";
 
 const ExpensesForm = ({ categories }) => {
   const [date, setDate] = React.useState("");
@@ -7,8 +8,20 @@ const ExpensesForm = ({ categories }) => {
   const [desc, setDesc] = React.useState("");
   const [account, setAccount] = React.useState("");
 
+  const handleSubmit = () => {
+    api
+      .postExpense({ date, amount, categoryId, description: desc, accountName: account })
+      .then(({ data }) => console.log(data))
+      .then(() => {
+        setDate("");
+        setAmount("");
+        setDesc("");
+        setAccount("");
+      });
+  };
+
   useEffect(() => {
-    setCategory(categories[0] ? categoryId || categories : "");
+    setCategory(categories[0] ? categoryId || categories[0].id : "");
   });
 
   return (
@@ -48,7 +61,7 @@ const ExpensesForm = ({ categories }) => {
               <input name="account" type="text" value={account} onChange={e => setAccount(e.target.value)} />
             </td>
             <td>
-              <input type="button" value="Add" />
+              <input type="button" value="Add" onClick={handleSubmit} />
             </td>
           </tr>
         </tbody>
