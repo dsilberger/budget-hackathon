@@ -39,9 +39,9 @@ class App extends React.Component {
     return (
       <div>
         <h1>Bear Tracks Budgeting App!</h1>
-        {/* <ExpensesForm categories={this.state.categoryList} />
-        <ExpenseList expenseList={this.state.expenseList} /> */}
         <UserForm />
+        <ExpensesForm categories={this.state.categoryList} />
+        <ExpenseList expenseList={this.state.expenseList} />
       </div>
     );
   }
