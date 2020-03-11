@@ -4,6 +4,7 @@ const PORT = 3000;
 const express = require("express");
 const morgan = require("morgan");
 const parser = require("body-parser");
+const path = require("path");
 
 // Require routers
 const expensesRouter = require("./routing/expensesRouter.js");
@@ -15,6 +16,7 @@ const app = express();
 // Set up middleware
 app.use(parser.json());
 app.use(morgan("dev"));
+app.use("/", express.static(path.join(__dirname, "../client/dist")));
 
 app.use(expensesRouter);
 app.use(usersRouter);
