@@ -1,11 +1,28 @@
-import React from "react";
+import React, { useEffect } from "react";
+import api from "../api.js";
 
-const ExpensesForm = ({ categories }) => {
+const ExpensesForm = ({ categories, addExpense }) => {
   const [date, setDate] = React.useState("");
   const [amount, setAmount] = React.useState("");
-  const [category, setCategory] = React.useState("");
+  const [categoryId, setCategory] = React.useState("");
   const [desc, setDesc] = React.useState("");
   const [account, setAccount] = React.useState("");
+
+  const handleSubmit = () => {
+    api
+      .postExpense({ date, amount, categoryId, description: desc, accountName: account })
+      .then(addExpense)
+      .then(() => {
+        setDate("");
+        setAmount("");
+        setDesc("");
+        setAccount("");
+      });
+  };
+
+  useEffect(() => {
+    setCategory(categories[0] ? categoryId || categories[0].id : "");
+  });
 
   return (
     <div>
@@ -29,8 +46,7 @@ const ExpensesForm = ({ categories }) => {
               <input name="amount" type="number" value={amount} onChange={e => setAmount(e.target.value)} />
             </td>
             <td>
-              {/* TODO: ensure this is initialized with a value! */}
-              <select name="category" value={category} onChange={e => setCategory(Number(e.target.value))}>
+              <select name="category" value={categoryId} onChange={e => setCategory(Number(e.target.value))}>
                 {categories.map(cat => (
                   <option key={cat.id} value={cat.id}>
                     {cat.name}
@@ -45,7 +61,7 @@ const ExpensesForm = ({ categories }) => {
               <input name="account" type="text" value={account} onChange={e => setAccount(e.target.value)} />
             </td>
             <td>
-              <input type="button" value="Add" />
+              <input type="button" value="Add" onClick={handleSubmit} />
             </td>
           </tr>
         </tbody>
