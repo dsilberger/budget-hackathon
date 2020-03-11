@@ -17,11 +17,16 @@ class App extends React.Component {
     };
 
     this.updateExpenses = this.updateExpenses.bind(this);
+    this.addExpense = this.addExpense.bind(this);
     this.updateCategories = this.updateCategories.bind(this);
   }
 
   updateExpenses() {
     api.fetchAllExpenses().then(expenseList => this.setState({ expenseList }));
+  }
+
+  addExpense(expense) {
+    this.setState({ expenseList: [...this.state.expenseList, expense] });
   }
 
   updateCategories() {
@@ -40,7 +45,10 @@ class App extends React.Component {
       <div>
         <h1>Bear Tracks Budgeting App!</h1>
         <UserForm />
-        <ExpensesForm categories={this.state.categoryList} />
+        <ExpensesForm
+          categories={this.state.categoryList}
+          addExpense={this.addExpense}
+        />
         <ExpenseList expenseList={this.state.expenseList} />
       </div>
     );

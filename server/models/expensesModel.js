@@ -45,7 +45,9 @@ const model = {
 
   _getExpenseById: id => {
     const q = `
-      select * from Expenses e
+      select e.id, e.date, e.description, c.name category, e.accountName, e.amount100
+      from Expenses e
+      left outer join Categories c on c.id = e.categoryId
       where e.id = ?`;
 
     return db.queryAsync(q, [id]).then(dbRes => dbRes[0]);

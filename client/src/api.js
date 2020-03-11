@@ -11,6 +11,20 @@ const api = {
   },
   handleUserSubmit: data => {
     return axios.post("/user", data);
+  },
+  postExpense: ({ date, amount, categoryId, description, accountName }) => {
+    const config = {
+      method: "POST",
+      url: "/expenses",
+      data: {
+        date,
+        description,
+        categoryId,
+        accountName,
+        amount100: amount * 100
+      }
+    };
+    return axios(config).then(({ data }) => data);
   }
 };
 
