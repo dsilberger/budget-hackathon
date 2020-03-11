@@ -18,12 +18,15 @@ create table if not exists Expenses (
   constraint foreign key (categoryId) references Categories (id)
 );
 
+truncate table Expenses;
+set foreign_key_checks = 0;
 truncate table Categories;
+set foreign_key_checks = 1;
+
 insert into Categories (name) values ("Groceries");
 insert into Categories (name) values ("Restaurants");
 insert into Categories (name) values ("Mortgage & Rent");
 
-truncate table Expenses;
 insert into Expenses (date, description, categoryId, accountName, amount100)
 values
   ("2019-01-01", "Skyba", 1, "Credit Card 1", 4900),
