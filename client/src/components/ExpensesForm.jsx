@@ -1,6 +1,6 @@
 import React from "react";
 
-const ExpensesForm = () => {
+const ExpensesForm = ({ categories }) => {
   const [date, setDate] = React.useState("");
   const [amount, setAmount] = React.useState("");
   const [category, setCategory] = React.useState("");
@@ -30,10 +30,12 @@ const ExpensesForm = () => {
             </td>
             <td>
               {/* TODO: ensure this is initialized with a value! */}
-              <select name="category" value={category} onChange={e => setCategory(e.target.value)}>
-                <option value="groceries">Groceries</option>
-                <option value="rent">Rent</option>
-                <option value="restaurants">Restaurants</option>
+              <select name="category" value={category} onChange={e => setCategory(Number(e.target.value))}>
+                {categories.map(cat => (
+                  <option key={cat.id} value={cat.id}>
+                    {cat.name}
+                  </option>
+                ))}
               </select>
             </td>
             <td>

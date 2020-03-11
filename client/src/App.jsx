@@ -8,7 +8,22 @@ class App extends React.Component {
     super(props);
 
     this.state = {
-      lorem: "ipsum"
+      lorem: "ipsum",
+
+      categories: [
+        {
+          id: 1,
+          name: "Groceries"
+        },
+        {
+          id: 2,
+          name: "Restaurants"
+        },
+        {
+          id: 3,
+          name: "Mortgage & Rent"
+        }
+      ]
     };
   }
 
@@ -16,7 +31,7 @@ class App extends React.Component {
     return (
       <div>
         <h1>Bear Tracks Budgeting App!</h1>
-        <ExpensesForm />
+        <ExpensesForm categories={this.state.categories} />
       </div>
     );
   }
