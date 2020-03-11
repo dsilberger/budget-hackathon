@@ -49,3 +49,15 @@ module.exports.addUser = function(userObj) {
 module.exports.getUser = function() {
   return User.findAll().then(data => data[0]["dataValues"]);
 };
+
+module.exports.update = function(userObj) {
+  return User.upsert(userObj);
+};
+
+module.exports.delete = function(userObj) {
+  return User.destroy({
+    where: {
+      id: userObj.id
+    }
+  });
+};

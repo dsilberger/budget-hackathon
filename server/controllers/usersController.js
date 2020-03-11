@@ -1,9 +1,7 @@
 const User = require("../models/usersModel.js");
 
 module.exports.create = function(req, res) {
-  const userObj = req.body;
-
-  User.addUser(userObj)
+  User.addUser(req.body)
     .then(() => {
       res.sendStatus(201);
     })
@@ -30,6 +28,24 @@ module.exports.retrieve = function(req, res) {
     })
     .catch(err => {
       console.error(`An error occured while creating a user: ${err}`);
+      res.sendStatus(500);
+    });
+};
+
+module.exports.update = function(req, res) {
+  User.update(req.body)
+    .then(() => res.sendStatus(204))
+    .catch(err => {
+      console.error(`An error occurred while updating the user: ${err}`);
+      res.sendStatus(500);
+    });
+};
+
+module.exports.delete = function(req, res) {
+  User.delete(req.body)
+    .then(() => res.sendStatus(204))
+    .catch(err => {
+      console.error(`An error occurred while deleting the user: ${err}`);
       res.sendStatus(500);
     });
 };
