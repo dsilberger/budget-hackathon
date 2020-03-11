@@ -1,6 +1,10 @@
-const HtmlWebPackPlugin = require("html-webpack-plugin");
+const path = require("path");
+
+const SRC_DIR = path.join(__dirname, "client/src/");
+const DIST_DIR = path.join(__dirname, "client/dist/");
 
 module.exports = {
+  entry: path.join(SRC_DIR, "App.jsx"),
   module: {
     rules: [
       {
@@ -9,21 +13,11 @@ module.exports = {
         use: {
           loader: "babel-loader"
         }
-      },
-      {
-        test: /\.html$/,
-        use: [
-          {
-            loader: "html-loader"
-          }
-        ]
       }
     ]
   },
-  plugins: [
-    new HtmlWebPackPlugin({
-      template: "./client/dist/index.html",
-      filename: "index.html"
-    })
-  ]
+  output: {
+    path: DIST_DIR,
+    filename: "bundle.js"
+  }
 };
