@@ -23,7 +23,7 @@ class UserForm extends React.Component {
     event.preventDefault();
     let newUserObject = {
       name: this.state.username,
-      income: Number(this.state.income),
+      income: Number(this.state.income) * 100,
       familySize: Number(this.state.familySize)
     };
 

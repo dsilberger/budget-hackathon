@@ -10,7 +10,6 @@ const api = {
     return axios(config).then(({ data: expenseList }) => expenseList);
   },
   handleUserSubmit: data => {
-    console.log(`Called with`, data);
     return axios.post("/user", data);
   }
 };
