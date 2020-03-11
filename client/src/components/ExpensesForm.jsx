@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import api from "../api.js";
 
-const ExpensesForm = ({ categories }) => {
+const ExpensesForm = ({ categories, addExpense }) => {
   const [date, setDate] = React.useState("");
   const [amount, setAmount] = React.useState("");
   const [categoryId, setCategory] = React.useState("");
@@ -11,7 +11,7 @@ const ExpensesForm = ({ categories }) => {
   const handleSubmit = () => {
     api
       .postExpense({ date, amount, categoryId, description: desc, accountName: account })
-      .then(({ data }) => console.log(data))
+      .then(addExpense)
       .then(() => {
         setDate("");
         setAmount("");
