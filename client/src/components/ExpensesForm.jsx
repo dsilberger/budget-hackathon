@@ -61,7 +61,12 @@ const ExpensesForm = ({ categories, addExpense }) => {
               <input name="account" type="text" value={account} onChange={e => setAccount(e.target.value)} />
             </td>
             <td>
-              <input type="button" value="Add" onClick={handleSubmit} />
+              <input
+                type="button"
+                className="button is-success is-rounded is-focused"
+                value="Add"
+                onClick={handleSubmit}
+              />
             </td>
           </tr>
         </tbody>
