@@ -9,6 +9,9 @@ const api = {
     const config = { url: "/expenses" };
     return axios(config).then(({ data: expenseList }) => expenseList);
   },
+  handleUserSubmit: data => {
+    return axios.post("/user", data);
+  },
   postExpense: ({ date, amount, categoryId, description, accountName }) => {
     const config = {
       method: "POST",
