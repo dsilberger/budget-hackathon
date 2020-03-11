@@ -28,6 +28,7 @@ class App extends React.Component {
 
       expenseList: [
         {
+          id: 1,
           date: "2019-01-01T05:00:00.000Z",
           description: "Skyba",
           category: "Groceries",
@@ -35,6 +36,7 @@ class App extends React.Component {
           amount100: 4900
         },
         {
+          id: 2,
           date: "2019-01-01T05:00:00.000Z",
           description: "Feedfish",
           category: "Groceries",
@@ -42,6 +44,7 @@ class App extends React.Component {
           amount100: 6080
         },
         {
+          id: 3,
           date: "2019-01-01T05:00:00.000Z",
           description: "Vinte",
           category: "Restaurants",
@@ -49,6 +52,7 @@ class App extends React.Component {
           amount100: 1012
         },
         {
+          id: 4,
           date: "2019-01-01T05:00:00.000Z",
           description: "Buzzshare",
           category: "Restaurants",
@@ -56,6 +60,7 @@ class App extends React.Component {
           amount100: 115000
         },
         {
+          id: 5,
           date: "2019-01-01T05:00:00.000Z",
           description: "Avaveo",
           category: "Mortgage & Rent",
@@ -63,6 +68,7 @@ class App extends React.Component {
           amount100: 30300
         },
         {
+          id: 6,
           date: "2020-02-02T05:00:00.000Z",
           description: "testing addExpense()",
           category: "Groceries",
@@ -70,6 +76,7 @@ class App extends React.Component {
           amount100: 99123
         },
         {
+          id: 7,
           date: "2020-02-02T05:00:00.000Z",
           description: "testing addExpense()",
           category: "Groceries",
@@ -77,6 +84,7 @@ class App extends React.Component {
           amount100: 99123
         },
         {
+          id: 8,
           date: "2020-02-02T05:00:00.000Z",
           description: "testing addExpense() 2",
           category: "Groceries",
@@ -84,6 +92,7 @@ class App extends React.Component {
           amount100: 99123
         },
         {
+          id: 9,
           date: "2019-12-25T05:00:00.000Z",
           description: "Postman post",
           category: "Groceries",
@@ -91,6 +100,7 @@ class App extends React.Component {
           amount100: 23222
         },
         {
+          id: 10,
           date: "2019-12-25T05:00:00.000Z",
           description: "Postman post",
           category: "Groceries",
