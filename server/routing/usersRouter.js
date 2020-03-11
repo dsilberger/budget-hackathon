@@ -4,6 +4,8 @@ const userController = require("../controllers/usersController.js");
 usersRouter
   .route("/user")
   .get(userController.retrieve)
-  .post(userController.create);
+  .post(userController.create)
+  .put(userController.update)
+  .delete(userController.delete);
 
 module.exports = usersRouter;
