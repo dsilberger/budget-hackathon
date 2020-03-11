@@ -1,5 +1,5 @@
 import React from "react";
-import api from "./api";
+import api from "../api.js";
 
 class UserForm extends React.Component {
   constructor(props) {
@@ -20,7 +20,14 @@ class UserForm extends React.Component {
   }
 
   handleClick(event) {
-    // model from Joe
+    event.preventDefault();
+    let newUserObject = {
+      name: this.state.username,
+      income: Number(this.state.income),
+      familySize: Number(this.state.familySize)
+    };
+
+    api.handleUserSubmit(newUserObject);
   }
 
   render() {
@@ -42,9 +49,11 @@ class UserForm extends React.Component {
             <input type="text" name="familySize" onChange={this.handleChange} />
           </label>
           <br />
-          <button>Sign-up</button>
+          <button onClick={this.handleClick}>Sign-up</button>
         </form>
       </div>
     );
   }
 }
+
+export default UserForm;
