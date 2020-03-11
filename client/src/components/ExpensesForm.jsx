@@ -26,9 +26,7 @@ const ExpensesForm = ({ categories, addExpense }) => {
 
   return (
     <div className="container">
-      <div className="container">
-        <h2>Add an expense:</h2>
-      </div>
+      <h2 className="title is-4">Add an expense:</h2>
       <div className="box">
         <div className="columns">
           <div className="column is-2">
