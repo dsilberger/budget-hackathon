@@ -30,9 +30,7 @@ class App extends React.Component {
   }
 
   updateCategories() {
-    api
-      .fetchAllCategories()
-      .then(categoryList => this.setState({ categoryList }));
+    api.fetchAllCategories().then(categoryList => this.setState({ categoryList }));
   }
 
   componentDidMount() {
@@ -43,12 +41,14 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <h1>Bear Tracks Budgeting App!</h1>
+        <section className="hero is-primary is-bold">
+          <div className="hero-body">
+            <h1 className="title">BearTracks Budget</h1>
+            <h2 className="sub-title">A budgeting app for the family on the go</h2>
+          </div>
+        </section>
         <UserForm />
-        <ExpensesForm
-          categories={this.state.categoryList}
-          addExpense={this.addExpense}
-        />
+        <ExpensesForm categories={this.state.categoryList} addExpense={this.addExpense} />
         <ExpenseList expenseList={this.state.expenseList} />
       </div>
     );
