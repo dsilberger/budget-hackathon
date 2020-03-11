@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const ExpensesForm = ({ categories }) => {
   const [date, setDate] = React.useState("");
@@ -6,6 +6,10 @@ const ExpensesForm = ({ categories }) => {
   const [categoryId, setCategory] = React.useState("");
   const [desc, setDesc] = React.useState("");
   const [account, setAccount] = React.useState("");
+
+  useEffect(() => {
+    setCategory(categories[0] ? categoryId || categories : "");
+  });
 
   return (
     <div>
@@ -29,7 +33,6 @@ const ExpensesForm = ({ categories }) => {
               <input name="amount" type="number" value={amount} onChange={e => setAmount(e.target.value)} />
             </td>
             <td>
-              {/* TODO: ensure this is initialized with a value! */}
               <select name="category" value={categoryId} onChange={e => setCategory(Number(e.target.value))}>
                 {categories.map(cat => (
                   <option key={cat.id} value={cat.id}>
