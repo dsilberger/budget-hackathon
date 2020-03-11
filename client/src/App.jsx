@@ -5,6 +5,7 @@ import api from "./api.js";
 import ExpensesForm from "./components/ExpensesForm.jsx";
 import ExpenseList from "./components/ExpenseList.jsx";
 import UserForm from "./components/UserForm.jsx";
+import NavBar from "./components/NavBar.jsx";
 
 class App extends React.Component {
   constructor(props) {
@@ -44,9 +45,9 @@ class App extends React.Component {
         <section className="hero is-primary is-bold">
           <div className="hero-body">
             <h1 className="title">BearTracks Budget</h1>
-            <h2 className="sub-title">A budgeting app for the family on the go</h2>
           </div>
         </section>
+        <NavBar />
         <UserForm />
         <ExpensesForm categories={this.state.categoryList} addExpense={this.addExpense} />
         <ExpenseList expenseList={this.state.expenseList} />
