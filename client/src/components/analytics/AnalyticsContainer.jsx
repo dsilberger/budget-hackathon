@@ -17,7 +17,11 @@ const AnalyticsContainer = () => {
         console.log("DATA", data);
         return data;
       })
-      .then(data => ({ ...data[Object.keys(data).sort()[0]], month: "March", year: "2020" }))
+      .then(data => {
+        let monthStr = Object.keys(data).sort()[0];
+        let [year, month] = monthStr.split("-");
+        return { ...data[monthStr], month, year };
+      })
       .then(({ expByCat, totalExp, income, delta, month, year }) => {
         setDelta(delta / 100);
         setIncome(income / 100);

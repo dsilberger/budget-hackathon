@@ -27,13 +27,10 @@ module.exports.aggregateViewData = function(req, res) {
           };
         }
 
-        if (
-          returnObj[yearDateKey]["expByCat"][expenses[i].category] === undefined
-        ) {
+        if (returnObj[yearDateKey]["expByCat"][expenses[i].category] === undefined) {
           returnObj[yearDateKey]["expByCat"][expenses[i].category] = 0;
         } else {
-          returnObj[yearDateKey]["expByCat"][expenses[i].category] +=
-            expenses[i].amount100;
+          returnObj[yearDateKey]["expByCat"][expenses[i].category] += expenses[i].amount100;
         }
 
         returnObj[yearDateKey]["totalExp"] += expenses[i].amount100;
@@ -51,24 +48,34 @@ module.exports.aggregateViewData = function(req, res) {
 
 const expFilter = function(foo) {
   obj = Object.assign({}, foo);
-  const filteredExps = [];
+  const exps = Object.entries(foo).sort((a, b) => b[1] - a[1]);
 
-  for (let i = 0; i < 4; i++) {
-    let zoo = findLargest(obj);
-    delete obj[Object.keys(zoo)[0]];
-    let largest = {
-      category: Object.keys(zoo)[0],
-      amount: zoo[Object.keys(zoo)[0]]
-    };
-    filteredExps.push(largest);
-  }
+  const top4 = exps.slice(0, 4);
 
-  let remainder = aggRest(obj);
-  if (remainder !== 0) {
-    filteredExps.push({ category: "Misc", amount: remainder });
-  }
+  const rest = exps.slice(5);
+  const other = rest.reduce((accum, curr) => accum + curr[1], 0);
 
-  return filteredExps;
+  console.log(top4);
+
+  top4.push(["Other", other]);
+
+  // const filteredExps = Object.entries(foo)
+  //   .sort((a, b) => b[1] - a[1])
+  //   .slice(0, 4)
+  //   .map(([category, amount]) => ({
+  //     category,
+  //     amount
+  //   }));
+
+  // let remainder = aggRest(obj);
+  // if (remainder !== 0) {
+  //   filteredExps.push({ category: "Other", amount: remainder });
+  // }
+
+  return top4.map(([category, amount]) => ({
+    category,
+    amount
+  }));
 };
 
 const findLargest = function(obj) {
