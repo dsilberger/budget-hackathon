@@ -51,7 +51,11 @@ module.exports.getUser = function() {
 };
 
 module.exports.update = function(userObj) {
-  return User.upsert(userObj);
+  return User.upsert(userObj, {
+    where: {
+      id: userObj.id
+    }
+  });
 };
 
 module.exports.delete = function(userObj) {

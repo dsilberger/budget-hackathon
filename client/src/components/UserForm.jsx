@@ -11,12 +11,14 @@ class UserForm extends React.Component {
       income: "",
       familySize: "",
       id: "",
-      editMode: false
+      editMode: false,
+      loggedIn: true
     };
 
     this.handleChange = this.handleChange.bind(this);
     this.handleClick = this.handleClick.bind(this);
     this.updateProfile = this.updateProfile.bind(this);
+    this.startEdit = this.startEdit.bind(this);
   }
 
   handleChange(event) {
@@ -24,15 +26,20 @@ class UserForm extends React.Component {
   }
 
   componentDidMount() {
-    api.fetchUserProfile().then(({ id, name, income, familySize }) => {
-      this.setState({
-        username: name,
-        id: id,
-        familySize: familySize,
-        income: income,
-        editMode: !this.state.editMode
+    api
+      .fetchUserProfile()
+      .then(({ id, name, income, familySize }) => {
+        this.setState({
+          username: name,
+          id: id,
+          familySize: familySize,
+          income: income / 100,
+          editMode: false
+        });
+      })
+      .catch(() => {
+        this.setState({ editMode: true, loggedIn: false });
       });
-    });
   }
 
   handleClick(event) {
@@ -43,23 +50,38 @@ class UserForm extends React.Component {
       familySize: Number(this.state.familySize)
     };
 
-    api.handleUserSubmit(newUserObject);
+    if (
+      newUserObject.name !== "" &&
+      newUserObject.income !== "" &&
+      newUserObject.familySize !== ""
+    ) {
+      api.handleUserSubmit(newUserObject);
+      this.setState({ loggedIn: true, editMode: false });
+    } else {
+      alert("Please complete all required fields!");
+    }
   }
 
   updateProfile(event) {
     event.preventDefault();
+    const userObj = {
+      id: this.state.id,
+      name: this.state.username,
+      income: Number(this.state.income) * 100,
+      familySize: Number(this.state.familySize)
+    };
 
-    api.fetchUserProfile().then(({ id, name, income, familySize }) => {
-      this.setState({
-        username: name,
-        id: id,
-        familySize: familySize,
-        income: income,
-        editMode: !this.state.editMode
-      });
+    api.handleUserUpdate(userObj).then(() => {
+      api.fetchUserProfile();
+      this.setState({ editMode: false });
     });
 
     console.log(this.state);
+  }
+
+  startEdit(event) {
+    event.preventDefault();
+    this.setState({ editMode: true });
   }
 
   render() {
@@ -79,7 +101,10 @@ class UserForm extends React.Component {
                     type="text"
                     name="username"
                     onChange={this.handleChange}
-                    placeholder={this.state.username}
+                    placeholder={
+                      (this.state.loggedIn && this.state.username) ||
+                      "What's your name?"
+                    }
                   />
                 )) ||
                   this.state.username}
@@ -92,7 +117,10 @@ class UserForm extends React.Component {
                     type="text"
                     name="income"
                     onChange={this.handleChange}
-                    placeholder={this.state.income}
+                    placeholder={
+                      (this.state.loggedIn && this.state.income) ||
+                      "What is your total monthly income?"
+                    }
                   />
                 )) ||
                   this.state.income}
@@ -105,7 +133,10 @@ class UserForm extends React.Component {
                     type="text"
                     name="familySize"
                     onChange={this.handleChange}
-                    placeholder={this.state.familySize}
+                    placeholder={
+                      (this.state.loggedIn && this.state.familySize) ||
+                      "How many people are there in your household?"
+                    }
                   />
                 )) ||
                   this.state.familySize}
@@ -115,15 +146,23 @@ class UserForm extends React.Component {
         </div>
         <div classname="card-footer">
           <div classname="card-footer-item">
-            {(!this.state.editMode && (
-              <button className="button is-medium" onClick={this.updateProfile}>
-                Edit Profile
+            {(!this.state.loggedIn && (
+              <button className="button is-medium" onClick={this.handleClick}>
+                Sign Up
               </button>
-            )) || (
-              <button className="button is-medium" onClick={this.updateProfile}>
-                Confirm
-              </button>
-            )}
+            )) ||
+              (this.state.loggedIn && this.state.editMode && (
+                <button
+                  className="button is-medium"
+                  onClick={this.updateProfile}
+                >
+                  Confirm
+                </button>
+              )) || (
+                <button className="button is-medium" onClick={this.startEdit}>
+                  Edit Profile
+                </button>
+              )}
           </div>
         </div>
       </div>
