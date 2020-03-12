@@ -29,6 +29,11 @@ import api from "../api.js";
 
 const NavBar = ({ setCurrentPage, currentPage }) => (
   <nav className="tabs is-centered">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://www.galvanize.com/">
+        <img src="https://i.imgur.com/smA2vGe.jpg" />
+      </a>
+    </div>
     <ul>
       <li
         onClick={() => setCurrentPage("user")}
