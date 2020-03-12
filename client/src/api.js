@@ -60,10 +60,30 @@ const api = {
       };
 
       const mock = {
-        expByCat: { Gym: 15000, Restaurants: 35000, Shopping: 22500 },
-        totalExp: 359000,
-        income: 460000,
-        delta: 101000
+        "2019-01": {
+          expByCat: [
+            { category: "Gym", amount: 15000 },
+            { category: "Restaurants", amount: 35000 },
+            { category: "Shopping", amount: 22500 },
+            { category: "Groceries", amount: 30000 },
+            { category: "Other", amount: 78733 }
+          ],
+          totalExp: 359000,
+          income: 460000,
+          delta: 101000
+        },
+        "2019-02": {
+          expByCat: [
+            { category: "Gym", amount: 15000 },
+            { category: "Restaurants", amount: 35000 },
+            { category: "Shopping", amount: 22500 },
+            { category: "Groceries", amount: 30000 },
+            { category: "Other", amount: 78733 }
+          ],
+          totalExp: 359000,
+          income: 460000,
+          delta: -9500
+        }
       };
 
       return axios(config)

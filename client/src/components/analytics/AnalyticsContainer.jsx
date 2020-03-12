@@ -8,14 +8,24 @@ const AnalyticsContainer = () => {
   const [income, setIncome] = useState("");
   const [totalExp, setTotalExp] = useState("");
   const [expByCat, setExpByCat] = useState("");
+  const [monthState, setMonth] = useState("");
+  const [yearState, setYear] = useState("");
 
   useEffect(() => {
-    api.Analytics.getSummary().then(({ expByCat, totalExp, income, delta }) => {
-      setDelta(delta / 1000);
-      setIncome(income / 1000);
-      setTotalExp(totalExp / 1000);
-      setExpByCat(expByCat);
-    });
+    api.Analytics.getSummary()
+      .then(data => {
+        console.log("DATA", data);
+        return data;
+      })
+      .then(data => ({ ...data[Object.keys(data).sort()[0]], month: "March", year: "2020" }))
+      .then(({ expByCat, totalExp, income, delta, month, year }) => {
+        setDelta(delta / 100);
+        setIncome(income / 100);
+        setTotalExp(totalExp / 100);
+        setExpByCat(expByCat);
+        setMonth(month);
+        setYear(year);
+      });
   }, []);
 
   return (
@@ -28,7 +38,7 @@ const AnalyticsContainer = () => {
               <article
                 className={`tile is-child box ${delta > 0 ? "has-background-success" : "has-background-danger"}`}
               >
-                <NumberCard title={"Net change in assets"} number={delta} />
+                <NumberCard title={"Net change in assets"} number={(delta > 0 ? "+" : "") + delta.toString()} />
               </article>
               <article className="tile is-child box">
                 <NumberCard title={"Income"} number={income} numberClasses="has-text-primary" />
@@ -40,7 +50,9 @@ const AnalyticsContainer = () => {
           </div>
         </div>
         <div className="tile is-parent is-4">
-          <article className="tile is-child box">content 5</article>
+          <article className="tile is-child box">
+            <SummaryByCategory month={monthState} year={yearState} expByCat={expByCat || []} />
+          </article>
         </div>
         <div className="tile is-2"></div>
       </div>
