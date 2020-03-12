@@ -9,6 +9,7 @@ const path = require("path");
 // Require routers
 const expensesRouter = require("./routing/expensesRouter.js");
 const usersRouter = require("./routing/usersRouter.js");
+const analyticsRouter = require("./routing/analyticsRouter.js");
 
 // Initialize express app
 const app = express();
@@ -20,5 +21,6 @@ app.use("/", express.static(path.join(__dirname, "../client/dist")));
 
 app.use(expensesRouter);
 app.use(usersRouter);
+app.use(analyticsRouter);
 
 app.listen(PORT, () => console.log(`Budget server listening on port ${PORT}!`));
