@@ -14,15 +14,15 @@ import api from "../api.js";
 // );
 
 // const NavBar = () => (
-//   <nav class="level">
-//     <p class="level-item has-text-centered">
-//       <a class="link is-info">Profile</a>
+//   <nav className="level">
+//     <p className="level-item has-text-centered">
+//       <a className="link is-info">Profile</a>
 //     </p>
-//     <p class="level-item has-text-centered">
-//       <a class="link is-info">Expenses</a>
+//     <p className="level-item has-text-centered">
+//       <a className="link is-info">Expenses</a>
 //     </p>
-//     <p class="level-item has-text-centered">
-//       <a class="link is-info">Analytics</a>
+//     <p className="level-item has-text-centered">
+//       <a className="link is-info">Analytics</a>
 //     </p>
 //   </nav>
 // );
@@ -30,13 +30,22 @@ import api from "../api.js";
 const NavBar = ({ setCurrentPage, currentPage }) => (
   <nav className="tabs is-centered">
     <ul>
-      <li onClick={() => setCurrentPage("user")} className={`${currentPage === "user" ? "is-active" : ""}`}>
+      <li
+        onClick={() => setCurrentPage("user")}
+        className={`${currentPage === "user" ? "is-active" : ""}`}
+      >
         <a>Profile</a>
       </li>
-      <li onClick={() => setCurrentPage("expenses")} className={`${currentPage === "expenses" ? "is-active" : ""}`}>
+      <li
+        onClick={() => setCurrentPage("expenses")}
+        className={`${currentPage === "expenses" ? "is-active" : ""}`}
+      >
         <a>Expenses</a>
       </li>
-      <li onClick={() => setCurrentPage("analytics")} className={`${currentPage === "analytics" ? "is-active" : ""}`}>
+      <li
+        onClick={() => setCurrentPage("analytics")}
+        className={`${currentPage === "analytics" ? "is-active" : ""}`}
+      >
         <a>Analytics</a>
       </li>
     </ul>

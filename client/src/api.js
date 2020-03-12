@@ -21,6 +21,15 @@ const api = {
     };
     return axios(config).then(({ data }) => data);
   },
+  handleUserUpdate: userObj => {
+    const config = {
+      method: "PUT",
+      url: "/user",
+      data: userObj
+    };
+
+    return axios(config).then(({ data }) => data);
+  },
   postExpense: ({ date, amount, categoryId, description, accountName }) => {
     const config = {
       method: "POST",

@@ -3,7 +3,7 @@ const User = require("../models/usersModel.js");
 module.exports.create = function(req, res) {
   User.addUser(req.body)
     .then(() => {
-      res.sendStatus(201);
+      res.send(res.body);
     })
     .catch(err => {
       console.error(`An error occured while creating a user: ${err}`);
