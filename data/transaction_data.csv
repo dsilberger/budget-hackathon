@@ -1,4 +1,4 @@
-Date,Description,Amount,Transaction Type,Category,Account Name
+date,description,amount,Transaction Type,category,accountName
 01/01/2019,Skyba,49,debit,Gym,Credit Card 1
 01/01/2019,Feedfish,60.8,debit,Restaurants,Credit Card 1
 01/01/2019,Vinte,10.12,debit,Shopping,Credit Card 1
