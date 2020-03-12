@@ -3,9 +3,9 @@ import ExpenseItem from "./ExpenseItem.jsx";
 
 const ExpenseList = ({ expenseList }) => {
   return (
-    <div>
-      <h2>Expenses:</h2>
-      <table>
+    <div className="container">
+      <h2 className="title is-4">Expenses:</h2>
+      <table className="table is-fullwidth is-scrollable">
         <thead>
           <tr>
             <th>Date</th>
