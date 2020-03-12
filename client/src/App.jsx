@@ -59,7 +59,7 @@ class App extends React.Component {
         )}
         {this.state.currentPage === "expenses" && (
           <section className="section">
-            <ExpenseList expenseList={this.state.expenseList} />
+            <ExpenseList expenseList={this.state.expenseList} categories={this.state.categoryList} />
           </section>
         )}
       </div>
