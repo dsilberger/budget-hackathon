@@ -51,6 +51,25 @@ const api = {
     };
 
     return axios(config).then(({ data }) => data);
+  },
+  Analytics: {
+    getSummary: () => {
+      const config = {
+        method: "GET",
+        url: "/analytics/summary"
+      };
+
+      const mock = {
+        expByCat: { Gym: 15000, Restaurants: 35000, Shopping: 22500 },
+        totalExp: 359000,
+        income: 460000,
+        delta: 101000
+      };
+
+      return axios(config)
+        .then(({ data }) => data)
+        .catch(err => mock);
+    }
   }
 };
 
