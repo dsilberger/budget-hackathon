@@ -16,6 +16,15 @@ const model = {
     return db.queryAsync(q);
   },
 
+  getCategoryByName: name => {
+    const q = `
+      select * from Categories c
+      where c.name = ?
+      limit 1`;
+
+    return db.queryAsync(q, [name]).then(dbRes => dbRes[0]);
+  },
+
   _getCategoryById: id => {
     const q = `
       select * from Categories c
@@ -24,10 +33,24 @@ const model = {
     return db.queryAsync(q, [id]).then(dbRes => dbRes[0]);
   },
 
-  addExpense: ({ date, description, categoryId, accountName, amount100 }) => {
+  addExpense: ({ date, description, categoryId, accountName, amount100, categoryName }) => {
     const q = `
       insert into Expenses (date, description, categoryId, accountName, amount100)
       values (?, ?, ?, ?, ?)`;
+
+    if (!categoryId) {
+      return model
+        .getCategoryByName(categoryName)
+        .then(category => {
+          if (category) return category.id;
+          return model.addCategory({ name: categoryName }).then(newCategory => newCategory.id);
+        })
+        .then(categoryId =>
+          db
+            .queryAsync(q, [date, description, categoryId, accountName, amount100])
+            .then(({ insertId }) => model._getExpenseById(insertId))
+        );
+    }
 
     return db
       .queryAsync(q, [date, description, categoryId, accountName, amount100])

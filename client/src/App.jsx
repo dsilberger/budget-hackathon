@@ -57,7 +57,11 @@ class App extends React.Component {
         {this.state.currentPage === "expenses" && (
           <ExpensesForm categories={this.state.categoryList} addExpense={this.addExpense} />
         )}
-        {this.state.currentPage === "expenses" && <ExpenseList expenseList={this.state.expenseList} />}
+        {this.state.currentPage === "expenses" && (
+          <section className="section">
+            <ExpenseList expenseList={this.state.expenseList} categories={this.state.categoryList} />
+          </section>
+        )}
       </div>
     );
   }
