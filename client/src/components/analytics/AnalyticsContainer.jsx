@@ -11,6 +11,8 @@ const AnalyticsContainer = () => {
   const [monthState, setMonth] = useState("");
   const [yearState, setYear] = useState("");
 
+  const [ind, setInd] = useState(0);
+
   useEffect(() => {
     api.Analytics.getSummary()
       .then(data => {
@@ -18,7 +20,7 @@ const AnalyticsContainer = () => {
         return data;
       })
       .then(data => {
-        let monthStr = Object.keys(data).sort()[0];
+        let monthStr = Object.keys(data).sort()[ind];
         let [year, month] = monthStr.split("-");
         return { ...data[monthStr], month, year };
       })
@@ -30,35 +32,40 @@ const AnalyticsContainer = () => {
         setMonth(month);
         setYear(year);
       });
-  }, []);
+  }, [ind]);
 
   return (
-    <div className="container">
-      <div className="tile is-ancestor">
-        <div className="tile is-2"></div>
-        <div className="tile is-vertical is-4">
-          <div className="tile">
-            <div className="tile is-parent is-vertical">
-              <article
-                className={`tile is-child box ${delta > 0 ? "has-background-success" : "has-background-danger"}`}
-              >
-                <NumberCard title={"Net change in assets"} number={(delta > 0 ? "+" : "") + delta.toString()} />
-              </article>
-              <article className="tile is-child box">
-                <NumberCard title={"Income"} number={income} numberClasses="has-text-primary" />
-              </article>
-              <article className="tile is-child box">
-                <NumberCard title={"Expenses"} number={totalExp} numberClasses="has-text-info" />
-              </article>
+    <div>
+      <div className="container">
+        <input className="input" type="number" onChange={e => setInd(e.target.value)}></input>
+      </div>
+      <div className="container">
+        <div className="tile is-ancestor">
+          <div className="tile is-2"></div>
+          <div className="tile is-vertical is-4">
+            <div className="tile">
+              <div className="tile is-parent is-vertical">
+                <article
+                  className={`tile is-child box ${delta > 0 ? "has-background-success" : "has-background-danger"}`}
+                >
+                  <NumberCard title={"Net change in assets"} number={(delta > 0 ? "+" : "") + delta.toString()} />
+                </article>
+                <article className="tile is-child box">
+                  <NumberCard title={"Income"} number={income} numberClasses="has-text-primary" />
+                </article>
+                <article className="tile is-child box">
+                  <NumberCard title={"Expenses"} number={totalExp} numberClasses="has-text-info" />
+                </article>
+              </div>
             </div>
           </div>
+          <div className="tile is-parent is-4">
+            <article className="tile is-child box">
+              <SummaryByCategory month={monthState} year={yearState} expByCat={expByCat || []} />
+            </article>
+          </div>
+          <div className="tile is-2"></div>
         </div>
-        <div className="tile is-parent is-4">
-          <article className="tile is-child box">
-            <SummaryByCategory month={monthState} year={yearState} expByCat={expByCat || []} />
-          </article>
-        </div>
-        <div className="tile is-2"></div>
       </div>
     </div>
   );
