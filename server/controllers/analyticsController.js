@@ -14,14 +14,12 @@ module.exports.aggregateViewData = function(req, res) {
     .then(obj => {
       const expenses = obj[0];
       const user = obj[1];
-      const returnObj = {
-        monthlyAggs: {}
-      };
+      const returnObj = {};
 
       for (let i = 0; i < expenses.length; i++) {
         const yearDateKey = expenses[i].date.slice(0, 7);
-        if (returnObj["monthlyAggs"][yearDateKey] === undefined) {
-          returnObj["monthlyAggs"][yearDateKey] = {
+        if (returnObj[yearDateKey] === undefined) {
+          returnObj[yearDateKey] = {
             expByCat: {},
             totalExp: 0,
             delta: user.income,
@@ -30,29 +28,21 @@ module.exports.aggregateViewData = function(req, res) {
         }
 
         if (
-          returnObj["monthlyAggs"][yearDateKey]["expByCat"][
-            expenses[i].category
-          ] === undefined
+          returnObj[yearDateKey]["expByCat"][expenses[i].category] === undefined
         ) {
-          returnObj["monthlyAggs"][yearDateKey]["expByCat"][
-            expenses[i].category
-          ] = 0;
+          returnObj[yearDateKey]["expByCat"][expenses[i].category] = 0;
         } else {
-          returnObj["monthlyAggs"][yearDateKey]["expByCat"][
-            expenses[i].category
-          ] += expenses[i].amount100;
+          returnObj[yearDateKey]["expByCat"][expenses[i].category] +=
+            expenses[i].amount100;
         }
 
-        returnObj["monthlyAggs"][yearDateKey]["totalExp"] +=
-          expenses[i].amount100;
+        returnObj[yearDateKey]["totalExp"] += expenses[i].amount100;
 
-        returnObj["monthlyAggs"][yearDateKey]["delta"] -= expenses[i].amount100;
+        returnObj[yearDateKey]["delta"] -= expenses[i].amount100;
       }
 
-      for (let key in returnObj["monthlyAggs"]) {
-        returnObj["monthlyAggs"][key]["expByCat"] = expFilter(
-          returnObj["monthlyAggs"][key]["expByCat"]
-        );
+      for (let key in returnObj) {
+        returnObj[key]["expByCat"] = expFilter(returnObj[key]["expByCat"]);
       }
 
       res.send(returnObj);
