@@ -51,6 +51,45 @@ const api = {
     };
 
     return axios(config).then(({ data }) => data);
+  },
+  Analytics: {
+    getSummary: () => {
+      const config = {
+        method: "GET",
+        url: "/analytics/summary"
+      };
+
+      const mock = {
+        "2019-01": {
+          expByCat: [
+            { category: "Gym", amount: 15000 },
+            { category: "Restaurants", amount: 35000 },
+            { category: "Shopping", amount: 22500 },
+            { category: "Groceries", amount: 30000 },
+            { category: "Other", amount: 78733 }
+          ],
+          totalExp: 359000,
+          income: 460000,
+          delta: 101000
+        },
+        "2019-02": {
+          expByCat: [
+            { category: "Gym", amount: 15000 },
+            { category: "Restaurants", amount: 35000 },
+            { category: "Shopping", amount: 22500 },
+            { category: "Groceries", amount: 30000 },
+            { category: "Other", amount: 78733 }
+          ],
+          totalExp: 359000,
+          income: 460000,
+          delta: -9500
+        }
+      };
+
+      return axios(config)
+        .then(({ data }) => data)
+        .catch(err => mock);
+    }
   }
 };
 

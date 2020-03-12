@@ -6,6 +6,7 @@ import ExpensesForm from "./components/ExpensesForm.jsx";
 import ExpenseList from "./components/ExpenseList.jsx";
 import UserForm from "./components/UserForm.jsx";
 import NavBar from "./components/NavBar.jsx";
+import AnalyticsContainer from "./components/analytics/AnalyticsContainer.jsx";
 
 class App extends React.Component {
   constructor(props) {
@@ -60,6 +61,11 @@ class App extends React.Component {
         {this.state.currentPage === "expenses" && (
           <section className="section">
             <ExpenseList expenseList={this.state.expenseList} categories={this.state.categoryList} />
+          </section>
+        )}
+        {this.state.currentPage === "analytics" && (
+          <section className="section">
+            <AnalyticsContainer />
           </section>
         )}
       </div>
